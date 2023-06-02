@@ -1,14 +1,35 @@
 {
-    "messages": [
-        {
-            "messageCode": "5340",
-            "messageText": "Member cannot be found.",
-            "messageSeverity": "Error"
-        }
-    ],
-    "apiVersionNumber": "1.0.0.0",
-    "isSuccess": false,
-    "response": null,
-    "timestamp": "2023-05-07T00:24:43.9175151-06:00",
-    "referenceNumber": ""
+	"Member": {
+		"Invalid_no": {
+			"messages": [
+				{
+					"messageCode": "5340",
+					"messageText": "Member cannot be found.",
+					"messageSeverity": "Error"
+				}
+			],
+			"apiVersionNumber": "1.0.0.0",
+			"isSuccess": false,
+			"response": null,
+			"timestamp": "2023-06-01T03:27:59.7143514-06:00",
+			"referenceNumber": ""
+		},
+		"Null_member": {
+			"errors": {
+				"memberNumber": [
+					"Error converting value {null} to type 'System.Int32'. Path 'memberNumber', line 1, position 19."
+				]
+			},
+			"type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+			"title": "One or more validation errors occurred.",
+			"status": 400,
+			"traceId": "|e86b8325-48386364b231aac7."
+		},
+		"Without_body": {
+			"type": "https://tools.ietf.org/html/rfc7231#section-6.5.13",
+			"title": "Unsupported Media Type",
+			"status": 415,
+			"traceId": "|e86b832b-48386364b231aac7."
+		}
+	}
 }
