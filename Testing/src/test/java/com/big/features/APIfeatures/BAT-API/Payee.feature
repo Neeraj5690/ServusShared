@@ -8,7 +8,7 @@ Background:
     * def payload2 = {"minimumFee":3,"feePercent":2,"paymentAmounts":[1000]}
     * def resp = call read('GetToken.feature')
     * def token = resp.response.access_token
-  
+  #jatin
 	Scenario:  Check for response headers and its values and compare same with layer7-[Content-Length] 
     Given url Baseurl +'/payees'
     And request jsonPayload
