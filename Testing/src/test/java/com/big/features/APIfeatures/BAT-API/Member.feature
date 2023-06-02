@@ -1,147 +1,186 @@
 Feature: BAT | Member
-Background:
+
+  Background: 
     * def Baseurl = 'https://bat-xapi.ca-c1.cloudhub.io/api/v1'
-    * def jsonPayload = read('request1.json')
-    * def L7_response = read('Response/valid_response.json')
-    * def L7_InvalidResponse = read('Response/Invalid_response.json')  
-    * def Expected_headers = read('Response/Layer7_header_response.json')
-    * def payload2 = {"minimumFee":3,"feePercent":2,"paymentAmounts":[1000]}
+    # Getting Token Data
     * def resp = call read('GetToken.feature')
-    * def token = resp.response.access_token
+    * def token = resp.token
+    # Reading Saved Data
+    * def jsonPayload = read('SavedData.json')
+    * def ContentType = jsonPayload.ContentType
+    * def InvalidContentType = jsonPayload.InvalidContentType
+    * def tokenInvalid = jsonPayload.InvalidToken
+    * def ExpectedResponseTime = jsonPayload.ExpectedResponseTime
+    * def MemberNumber = jsonPayload.memberNumber
+    * def MemberNumberInvalid = jsonPayload.memberNumberInvalid
+    * def LargeMemberNumber = jsonPayload.LargeMemberNumber
+    * def MinimumFee = jsonPayload.minimumFee
+    * def FeePercent = jsonPayload.feePercent
+    * def PaymentAmounts = jsonPayload.paymentAmounts
+    # Printing saved data
+    * print token
+    * print ContentType
+    * print tokenInvalid
+    * print ExpectedResponseTime
+    * print MemberNumber
+    * print MemberNumberInvalid
+    * print MinimumFee
+    * print FeePercent
+    * print PaymentAmounts
+    # Reading Layer 7 Saved Data
+    * def L7_response = read('Response/valid_response.json')
+    * def L7_InvalidResponse = read('Response/Invalid_response.json')
+    * def Expected_headers = read('Response/Layer7_header_response.json')
+
+  # 1 Mule API response with valid input
+  Scenario: 1 Check for Mule API response with valid input
+    Given url Baseurl + '/member'
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Authorization = 'Bearer '+ token
+    When method POST
+    Then status 200
+      
+  # 2 Mule API response with valid request header - [Content-Type]
+  Scenario: 2 Check for Mule API response with valid request header - [Content-Type]
+    Given url Baseurl + '/member'
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = ContentType
+    And header Authorization = 'Bearer '+ token
+    When method POST
+    Then status 200
   
-	Scenario:  Check for response headers and its values and compare same with layer 7 - [Content-Length] 
+  # 3 Mule API response with Invalid request header - [Content-Type]
+  Scenario: 3 Check for Mule API response with Invalid request header - [Content-Type]
     Given url Baseurl + '/member'
-    And request {"memberNumber": 54320}
-    And header Content-Type = 'application/json'
-    * print 'ExpectedHeaders ' + Expected_headers
-    * print 'token '+ token
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = InvalidContentType
     And header Authorization = 'Bearer '+ token
     When method POST
-    Then status 200
+    Then status 415
+    
+  # 4 response headers - Content-Length
+  Scenario: 4 Check for response headers and its values and compare same with layer 7 - [Content-Length]
+    Given url Baseurl + '/member'
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = ContentType
+    And header Authorization = 'Bearer '+ token
+    When method POST
     * print response
     * print responseHeaders
-    * def ContentLength_L7 = Expected_headers['Member']['Response Headers']['content-length']
+    Then status 200
+    # Getting Mule Response
     * def ContentLength_mule = responseHeaders["Content-Length"][0]
-    And match ContentLength_L7 == ContentLength_mule 
+    # Reading L7 saved Response
+    * def ContentLength_L7 = Expected_headers['Member']['Response Headers']['content-length']
+    # Matching response data
+    And match ContentLength_L7 == ContentLength_mule
 
-    
-       
-	Scenario:  Check for response headers and its values and compare same with layer 7 - [Content-Type] 
+  # 5 response headers - Content-Type
+  Scenario: 5 Check for response headers and its values and compare same with layer 7 - [Content-Type]
     Given url Baseurl + '/member'
-    And request {"memberNumber": 54320}
-    And header Content-Type = 'application/json'
-    * print 'ExpectedHeaders ' + Expected_headers
-    * print 'token '+ token
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
-    Then status 200
     * print response
+    Then status 200
     * print responseHeaders
-    * def ContentType_L7 = Expected_headers['Member']['Response Headers']['content-type'] 
-		* def ContentType_mule = responseHeaders["Content-Type"][0]
-		And karate.match(ContentType_L7 == ContentType_mule, 'ignoreCase')
+    # Getting Mule Response
+    * def ContentType_mule = responseHeaders["Content-Type"][0]
+    # Reading L7 saved Response
+    * def ContentType_L7 = Expected_headers['Member']['Response Headers']['content-type']
+    # Matching response data
+    And karate.match(ContentType_L7 == ContentType_mule, 'ignoreCase')
 
-
-	Scenario:  Check for ResponseTime of Member API and compare same with layer 7 - [ResponseTime] 
+  # 6 ResponseTime
+  Scenario: 6 Check for responseTime and compare with expected response time - [ResponseTime]
     Given url Baseurl + '/member'
-    And request {"memberNumber": 54320}
-    And header Content-Type = 'application/json'
-    #* print 'ExpectedHeaders ' + Expected_headers
-    #* print 'token '+ token
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
-    Then status 200
     * print response
+    Then status 200
+    # Getting Mule Response
     * def responseTime = karate.get('responseTime')
-    And print responseTime 
-    * def Expected_responseTime = 1000 
+    And print responseTime
+    # Reading expected saved Response
+    * def Expected_responseTime = ExpectedResponseTime
     * def Layer7_responseTime = 677
+    # Matching response data
     * assert responseTime <= Expected_responseTime
-    
 
-
-	Scenario:  Check for Response and compare same with layer 7 for valid member number 
+  # 7 Valid member number
+  Scenario: 7 Check for response and compare same with layer 7 for valid key body parameter -[member number]
     Given url Baseurl + '/member'
-    And request {"memberNumber": 54320}
-    And header Content-Type = 'application/json'
-    * print 'ExpectedHeaders ' + Expected_headers
-    * print 'token '+ token
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
+    * print 'response:', response
     Then status 200
+    # Getting Mule Response
     And def Response_mule = response
     * karate.remove('response', 'timestamp')
     * karate.remove('response', 'referenceNumber')
-    * print Response_mule
+    # Reading L7 saved Response
     * def L7_response_member = L7_response['Member']
+    # Matching response data
+    * match L7_response_member == Response_mule
 
-    * karate.match(L7_response == Response_mule, 'ignoreCase')
-    * match L7_response_member == Response_mule 
-
-
-
-  Scenario: Check for Response and compare same with layer 7 for invalid member number 
+  # 8 invalid member number
+  Scenario: 8 Check for response and compare same with layer 7 for invalid key body parameter - [member number]
     Given url Baseurl + '/member'
-    And request {"memberNumber": 54320123}
-    And header Content-Type = 'application/json'
+    And request {"memberNumber": '#(MemberNumberInvalid)'}
+    And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
-    Then status 200
     * print 'response:', response
-    
+    Then status 200
+    # Getting Mule Response
     * def MuleResponse_messageCode = response['messages'][0].messageCode
     * def MuleResponse_messageText = response['messages'][0].messageText
     * def MuleResponse_messageSeverity = response['messages'][0].messageSeverity
+    # Reading L7 saved Response
     * print L7_InvalidResponse
     * def L7Response_messageCode = L7_InvalidResponse['Member']['Invalid_no']['messages'][0].messageCode
     * def L7Response_messageText = L7_InvalidResponse['Member']['Invalid_no']['messages'][0].messageText
     * def L7Response_messageSeverity = L7_InvalidResponse['Member']['Invalid_no']['messages'][0].messageSeverity
-
+    # Matching response data
     * match L7Response_messageCode == MuleResponse_messageCode
     * match L7Response_messageText == MuleResponse_messageText
     * match L7Response_messageSeverity == MuleResponse_messageSeverity
 
-
-
-
-  #Scenario: payees
-    #Given url Baseurl + '/payees'
-    #And request jsonPayload
-    #And header Content-Type = 'application/json'
-    #And header Authorization = 'Bearer ' + token
-    #And form field client_id = '2c1fe860-ab8f-11e8-98d0-529269fb1459'
-    #And form field client_secret = '2c1fe860-ab8f-11e8-98d0-529269fb1459'
-    #And form field x-transaction-id = '2c1fe860-ab8f-11e8-98d0-529269fb1459'
-    #When method POST
-    #Then status 200
-    #* print 'response:', response
-    #* def ContentLength_L7 = Expected_headers['payee']['Response Headers']['content-length']
-    #* def ContentType_L7 = Expected_headers['payee']['Response Headers']['content-type']
-    #And match ContentLength_L7 == responseHeaders["Content-Length"][0] 
-#		* def ContentType2 = responseHeaders["Content-Type"][0]
-#		And match ContentType_L7 == ContentType2
-#
-  #Scenario: Calculate Fee
-    #Given url Baseurl + '/calculatefee'
-    #And request payload2
-    #And header Content-Type = 'application/json'
-    #And header Authorization = 'Bearer ' + token
-    #When method POST
-    #Then status 200
-    #* print 'response:', response
-    #* def ContentLength_L7 = Expected_headers['calculate']['Response Headers']['content-length']
-    #* def ContentType_L7 = Expected_headers['calculate']['Response Headers']['content-type']
-    #And match ContentLength_L7 == responseHeaders["Content-Length"][0] 
-#		* def ContentType2 = responseHeaders["Content-Type"][0]
-#		And match ContentType_L7 == ContentType2
-    #
-  #Scenario: Healthcheck
-  #	Given url Baseurl + '/healthcheck'
-    #When method GET
-    #Then status 200
-    #* print 'response:', response
-       #* def ContentLength_L7 = Expected_headers['Healthcheck']['Response Headers']['content-length']
-    #* def ContentType_L7 = Expected_headers['Healthcheck']['Response Headers']['content-type']
-    #And match ContentLength_L7 == responseHeaders["Content-Length"][0] 
-#		* def ContentType2 = responseHeaders["Content-Type"][0]
-#		And match ContentType_L7 == ContentType2
+  # 9 Invalid Authentication Token
+  Scenario: 9 Check for Mule api response with Invalid Authentication Token
+    Given url Baseurl + '/member'
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = ContentType
+    And header Authorization = 'Bearer '+ tokenInvalid
+    When method POST
+    * print response
+    Then status 401
+    
+  	# 10 Missing Content in body
+  Scenario: 10 Check for Mule api response with missing Content in body
+    Given url Baseurl + '/member'
+    #And request {"memberNumber": '#(MemberNumber)'}
+    And header Content-Type = ContentType
+    And header Authorization = 'Bearer '+ token
+    When method POST
+    * print response
+    Then status 400
+    * match response['errors'][''][0] == 'A non-empty request body is required.'
+    
+	# 11 Increased input limit
+  Scenario: 11 Check for Mule api response with Increased input limit in filed - [member number]
+    Given url Baseurl + '/member'
+    And print MemberNumber
+    And request {"memberNumber": '#(LargeMemberNumber)'}
+    And header Content-Type = ContentType
+    And header Authorization = 'Bearer '+ token
+    When method POST
+    * print response
+    Then status 400
+    #* print response['errors']
+    
