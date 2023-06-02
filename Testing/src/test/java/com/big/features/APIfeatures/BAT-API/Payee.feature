@@ -40,7 +40,7 @@ Background:
 		* def ContentType_mule = responseHeaders["Content-Type"][0]
 		And karate.match(ContentType_L7 == ContentType_mule, 'ignoreCase')
 
-	@ignore
+#	@ignore
   Scenario: member with invalid Member number[54320123]
     Given url Baseurl + '/member'
     And request {"memberNumber": 54320123}
