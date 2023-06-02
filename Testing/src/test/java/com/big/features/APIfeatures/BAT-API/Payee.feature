@@ -1,14 +1,50 @@
 Feature: BAT | Payee API
 Background:
     * def Baseurl = 'https://bat-xapi.ca-c1.cloudhub.io/api/v1'
-    * def jsonPayload = read('request1.json')
+    * def subpath = '/payees'
+    # Getting Token Data
+    * def resp = call read('GetToken.feature')
+    * def token = resp.token
+    # Reading Saved Data
+    * def jsonPayload = read('SavedData.json')
+    * def ContentType = jsonPayload.ContentType
+    * def InvalidContentType = jsonPayload.InvalidContentType
+    * def tokenInvalid = jsonPayload.InvalidToken
+    * def ExpectedResponseTime = jsonPayload.ExpectedResponseTime
+    * def MemberNumber = jsonPayload.memberNumber
+    * def MemberNumberInvalid = jsonPayload.memberNumberInvalid
+    * def LargeMemberNumber = jsonPayload.LargeMemberNumber
+    * def MinimumFee = jsonPayload.minimumFee
+    * def FeePercent = jsonPayload.feePercent
+    * def PaymentAmounts = jsonPayload.paymentAmounts
+    # Printing saved data
+    * print token
+    * print ContentType
+    * print tokenInvalid
+    * print ExpectedResponseTime
+    * print MemberNumber
+    * print MemberNumberInvalid
+    * print MinimumFee
+    * print FeePercent
+    * print PaymentAmounts
+    # Reading Layer 7 Saved Data
+    * def L7_response = read('Response/valid_response.json')
+    * def L7_InvalidResponse = read('Response/Invalid_response.json')
+    * def Expected_headers = read('Response/Layer7_header_response.json')
+    
+    
     * def Expected_output = read('Response/valid_response.json')
     * def Expected_output2 = read('Response/Invalid_response.json')  
     * def Expected_headers = read('Response/Layer7_header_response.json')
-    * def payload2 = {"minimumFee":3,"feePercent":2,"paymentAmounts":[1000]}
-    * def resp = call read('GetToken.feature')
-    * def token = resp.response.access_token
 
+	# 1 Mule API response with valid input
+  Scenario: 1 Check for Mule API response with valid input
+    Given url Baseurl + subpath
+    And request {"memberNumber": '#(MemberNumber)'}
+    And header Authorization = 'Bearer '+ token
+    When method POST
+    Then status 200
+	
 	Scenario:  Check for response headers and its values and compare same with layer7-[Content-Length] 
     Given url Baseurl +'/payees'
     And request jsonPayload
