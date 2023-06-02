@@ -1,33 +1,33 @@
-Feature: Get Accounts
+Feature: Get PAN Details API
 Background:
     * def Baseurl = 'https://credit-card-xapi.ca-c1.cloudhub.io/api/v1'
     * def resp = call read('1GetToken.feature')
-    * def Expected_output = read('Response/valid_Response.json')
+    * def Expected_output = read('Response/valid_response.json')
     * def token = resp.response.access_token
     * def Expected_headers = read('Response/Layer7_header_response.json')
     
   Scenario: Check for response headers and its values and compare same with layer 7 - [Content-Length]
-    Given url Baseurl + '/accounts/2512'
+    Given url Baseurl + '/account/5900001228827406/detail?resolution=1'
     And header Authorization = 'Bearer ' + token
     When method GET
     Then status 200
     * print 'response:', response
-		* def ContentLength_L7 = Expected_headers['Get_Accounts']['Response Headers']['content-length']
+		* def ContentLength_L7 = Expected_headers['Get_pan_Details']['Response Headers']['content-length']
     * def ContentLength_mule = responseHeaders["Content-Length"][0]
     And match ContentLength_L7 == ContentLength_mule 
     
   Scenario: Check for response headers and its values and compare same with layer 7 - [Content-Type] 
-    Given url Baseurl + '/accounts/2512'
+    Given url Baseurl + '/account/5900001228827406/detail?resolution=1'
     And header Authorization = 'Bearer ' + token
     When method GET
     Then status 200
     * print 'response:', response
-		* def ContentType_L7 = Expected_headers['Get_Accounts']['Response Headers']['content-type']
+		* def ContentType_L7 = Expected_headers['Get_pan_Details']['Response Headers']['content-type']
     * def ContentType_mule = responseHeaders["Content-Type"][0]
-    And karate.match(ContentType_L7 == ContentType_mule, 'ignoreCase')
+    And match ContentLength_L7 == ContentLength_mule 
 
 Scenario:  Check for ResponseTime of Get Accounts API and compare same with layer 7 - [ResponseTime] 
-    Given url Baseurl + '/accounts/2512'
+    Given url Baseurl + '/account/5900001228827406/detail?resolution=1'
     And header Authorization = 'Bearer ' + token
     When method GET
     Then status 200
@@ -39,7 +39,7 @@ Scenario:  Check for ResponseTime of Get Accounts API and compare same with laye
     * assert responseTime <= Expected_responseTime
 
 	Scenario:  Check for Response and compare same with layer 7-[Response] 
-    Given url Baseurl + '/accounts/2512'
+    Given url Baseurl + '/account/5900001228827406/detail?resolution=None'
     And header Authorization = 'Bearer ' + token
     When method GET
     Then status 200
@@ -48,7 +48,8 @@ Scenario:  Check for ResponseTime of Get Accounts API and compare same with laye
     * karate.remove('response', 'timestamp')
     * karate.remove('response', 'referenceNumber')
     * print Response_mule
-    * def L7_response_accounts = Expected_output['Get_Accounts']
+    * def L7_response_accounts = L7_response['Get_Accounts']
+
     * karate.match(L7_response == Response_mule, 'ignoreCase')
     * match L7_response_accounts == Response_mule 
 

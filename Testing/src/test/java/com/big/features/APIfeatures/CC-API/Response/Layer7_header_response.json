@@ -1,0 +1,51 @@
+{
+"Get_Accounts":{
+  "Response Headers": {
+    "content-type": "application/json;charset=utf-8",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "date": "Tue, 30 May 2023 05:14:20 GMT",
+    "content-length": "345"
+  }
+},
+
+"Get_Pan_Details":{
+  "Response Headers": {
+    "content-type": "application/json; charset=utf-8",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "date": "Wed, 31 May 2023 09:35:51 GMT",
+    "content-length": "904"
+  }
+},
+
+"calculate":{
+  "Response Headers": {
+    "content-length": "208",
+    "content-type": "application/json; charset=utf-8",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "date": "Wed, 31 May 2023 09:39:44 GMT"
+  }
+  },
+  
+"Healthcheck":{
+  "Response Headers": {
+    "content-length": "185",
+    "content-type": "application/json; charset=utf-8",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "date": "Wed, 31 May 2023 09:44:07 GMT"
+  }
+},
+
+"create":{
+  "Response Headers": {
+    "content-length": "265",
+    "content-type": "application/json; charset=utf-8",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "date": "Wed, 31 May 2023 09:43:02 GMT"
+  }
+  }
+  }

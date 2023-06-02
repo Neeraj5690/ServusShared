@@ -9,7 +9,7 @@ Background:
     * def resp = call read('GetToken.feature')
     * def token = resp.response.access_token
   
-		Scenario:  Check for response headers and its values and compare same with layer 7 - [Content-Length] 
+	Scenario:  Check for response headers and its values and compare same with layer 7 - [Content-Length] 
     Given url Baseurl + '/member'
     And request {"memberNumber": 54320}
     And header Content-Type = 'application/json'
@@ -57,11 +57,10 @@ Background:
     * def Expected_responseTime = 1000 
     * def Layer7_responseTime = 677
     * assert responseTime <= Expected_responseTime
-    #And print responseTime  
     
 
 
-	Scenario:  Check for Response and compare same with layer 7 - [Response] 
+	Scenario:  Check for Response and compare same with layer 7 for valid member number 
     Given url Baseurl + '/member'
     And request {"memberNumber": 54320}
     And header Content-Type = 'application/json'
@@ -79,7 +78,9 @@ Background:
     * karate.match(L7_response == Response_mule, 'ignoreCase')
     * match L7_response_member == Response_mule 
 
-  Scenario: Member with invalid Member number[54320123]
+
+
+  Scenario: Check for Response and compare same with layer 7 for invalid member number 
     Given url Baseurl + '/member'
     And request {"memberNumber": 54320123}
     And header Content-Type = 'application/json'
@@ -87,19 +88,22 @@ Background:
     When method POST
     Then status 200
     * print 'response:', response
+    
     * def MuleResponse_messageCode = response['messages'][0].messageCode
     * def MuleResponse_messageText = response['messages'][0].messageText
     * def MuleResponse_messageSeverity = response['messages'][0].messageSeverity
-       
     * print L7_InvalidResponse
-    * def L7Response_messageCode = L7_InvalidResponse['messages'][0].messageCode
-    * def L7Response_messageText = L7_InvalidResponse['messages'][0].messageText
-    * def L7Response_messageSeverity = L7_InvalidResponse['messages'][0].messageSeverity
+    * def L7Response_messageCode = L7_InvalidResponse['Member']['Invalid_no']['messages'][0].messageCode
+    * def L7Response_messageText = L7_InvalidResponse['Member']['Invalid_no']['messages'][0].messageText
+    * def L7Response_messageSeverity = L7_InvalidResponse['Member']['Invalid_no']['messages'][0].messageSeverity
 
     * match L7Response_messageCode == MuleResponse_messageCode
     * match L7Response_messageText == MuleResponse_messageText
     * match L7Response_messageSeverity == MuleResponse_messageSeverity
-#		
+
+
+
+
   #Scenario: payees
     #Given url Baseurl + '/payees'
     #And request jsonPayload

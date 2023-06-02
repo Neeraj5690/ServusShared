@@ -31,5 +31,21 @@
 			"status": 415,
 			"traceId": "|e86b832b-48386364b231aac7."
 		}
+	},
+	"Payee": {
+	  "Invalid_no": {
+		    "messages": [
+		        {
+		            "messageCode": "5340",
+		            "messageText": "Member cannot be found.",
+		            "messageSeverity": "Error"
+		        }
+		    ],
+		    "apiVersionNumber": "1.0.0.0",
+		    "isSuccess": false,
+		    "response": null,
+		    "timestamp": "2023-06-02T05:53:22.1246501-06:00",
+		    "referenceNumber": ""
+		}
 	}
 }

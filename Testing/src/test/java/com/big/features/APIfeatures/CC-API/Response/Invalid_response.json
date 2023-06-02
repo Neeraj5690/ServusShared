@@ -1,0 +1,16 @@
+{
+	"Member": {
+    "ApiVersionNumber": "2.0.1.0",
+    "ReferenceNumber": null,
+    "Messages": [
+        {
+            "MessageCode": "20006",
+            "MessageText": "Not found GetAccountDetail_v4 PAN = {pan}",
+            "MessageSeverity": "Error"
+        }
+    ],
+    "IsSuccess": false,
+    "Response": null,
+    "Timestamp": "2023-06-02T01:51:13.4437577-06:00"
+}
+}
