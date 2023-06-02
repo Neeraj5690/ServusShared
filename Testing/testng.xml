@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="Big TestNG Test" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter"/>
+        <listener class-name="com.big.utils.AnnotationTransformer"/>
+    </listeners>
+    <groups>
+        <run>
+            <include name="Sanity"/>
+            <exclude name="Regression"/>
+            <include name="Smoke"/>
+        </run>
+    </groups>
+    <test name="Google Search">
+        <classes>
+            <class name="com.big.testNGscripts.GoogleSearchTest"/>
+            <class name="com.big.testNGscripts.GoogleSearchDataProvider"/>
+        </classes>
+    </test>
+</suite>

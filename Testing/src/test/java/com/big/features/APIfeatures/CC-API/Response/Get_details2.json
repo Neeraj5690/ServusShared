@@ -1,0 +1,109 @@
+{
+    "ApiVersionNumber": "2.0.1.0",
+    "ReferenceNumber": null,
+    "Messages": [
+        {
+            "MessageCode": "30112",
+            "MessageText": "Real-time data not available",
+            "MessageSeverity": "Warning"
+        }
+    ],
+    "IsSuccess": true,
+    "Response": {
+        "CardActivationStatus": "Yes",
+        "CardholderSince": "2012-11-28T00:00:00",
+        "CardIssueDate": "2018-03-15T00:00:00",
+        "CorporateAdministrators": null,
+        "MailingAddress": {
+            "Street": [
+                "Everybodystayatsameplace ",
+                "NotOnAddress2            ",
+                "ThisisBlank              "
+            ],
+            "City": "StillSearching",
+            "Province": "AB",
+            "PostalCode": "T65252"
+        },
+        "StatementAddress": null,
+        "PostingDate": "2020-05-12T00:00:00",
+        "CurrentMinPayment": 0.00,
+        "CurrentBalance": 0.00,
+        "AvailableBalance": 7933.51,
+        "CreditLimit": 10200.00,
+        "MonthySpend": 0.0000,
+        "BalanceProtectionInsurance": "No",
+        "FixedPaymentAmount": null,
+        "LastAnnualFee": 24.00,
+        "Delinquency": null,
+        "Payments": null,
+        "Statements": [
+            {
+                "RewardPoints": 0,
+                "StatementDate": "2021-09-20T00:00:00",
+                "StatementBalance": 0.00,
+                "MinPayment": 0.00,
+                "DueDate": "2020-05-26T00:00:00",
+                "Rates": {
+                    "Purchases": 19.99,
+                    "CashAdvance": 24.99,
+                    "RateTypeText": "Standard",
+                    "RateType": "S"
+                },
+                "RewardDate": "2021-04-23T00:00:00"
+            }
+        ],
+        "CashSecured": null,
+        "BillDay": 2,
+        "IsEmployeeAccount": false,
+        "UserFields": {
+            "Field1": "               ",
+            "Field2": "               ",
+            "Field3": "               ",
+            "Field4": "               ",
+            "Field5": "   ",
+            "Field6": "               ",
+            "Field7": "               ",
+            "Field8": "               ",
+            "Field9": "               ",
+            "Field10": "               ",
+            "Field11": "               ",
+            "Field12": "               ",
+            "Field13": "               ",
+            "Field14": "   ",
+            "Field15": "   ",
+            "Field16": "               ",
+            "Field17": "               ",
+            "Field18": "               ",
+            "Field19": "               ",
+            "Field20": "               ",
+            "Field21": "               ",
+            "Field22": "  ",
+            "Field23": "  "
+        },
+        "ExtraFields": {
+            "Field1": "               ",
+            "Field2": "               "
+        },
+        "RealTimeFailure": true,
+        "PendingAuthorizationAmount": null,
+        "PastDueHistory1_12": null,
+        "PastDueHistory13_24": null,
+        "TimesDelinquent1_12": 0,
+        "TimesDelinquent13_24": 0,
+        "HolderName": "2512,FirstName",
+        "LastFour": "7406",
+        "Product": "LOW FEE",
+        "CardType": "Primary",
+        "Type": "Retail",
+        "Status": "Active",
+        "BusinessName": null,
+        "isActive": 1,
+        "PAN": "5900001228827406",
+        "BillingType": "R",
+        "AccountType": "P",
+        "isTopLevel": false,
+        "isBusiness": false,
+        "isBusinessIndividual": false
+    },
+    "Timestamp": "2023-04-25T03:25:37.262205-06:00"
+}

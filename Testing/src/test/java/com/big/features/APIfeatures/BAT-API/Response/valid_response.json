@@ -1,0 +1,149 @@
+{
+	"Member": {
+		"messages": [],
+		"apiVersionNumber": "1.0.0.0",
+		"isSuccess": true,
+		"response": {
+			"partyId": 1654,
+			"memberNumber": 54320,
+			"benefit": "regular",
+			"firstName": "THANASI",
+			"middleName": null,
+			"surname": "ECKARDT",
+			"legalName": null,
+			"mobilePhone": "8886408688",
+			"email": "THANASI.ECKARDT@datamask.ca",
+			"display": "THANASI ECKARDT",
+			"creditCards": [
+				{
+					"cardHolderName": "Dixon, Eleanor",
+					"status": "Active",
+					"creditLimit": 8800,
+					"availableCredit": 4197.51,
+					"userCode": "SRO",
+					"pan": "5500001466243903",
+					"panLastFour": "3903",
+					"product": "Standing Retail Offer",
+					"type": "Retail",
+					"offerTerm": -1,
+					"offerRate": 0.2499,
+					"offerMinFee": 7.5,
+					"offerFeePercent": 0.01,
+					"isLowRate": false,
+					"cashRate": 0.2499,
+					"isStandingOffer": true,
+					"cardholderSince": "2004-07-12T00:00:00",
+					"isNew": false,
+					"termsAndConditionsHtml": "* You can request a balance transfer on your non-Servus Credit Union credit card or a transfer of funds from your Servus Mastercard Account (your \"Account\") to your Servus chequing or savings account in an amount (including the transfer fee) that does not exceed your current credit limit (taking your outstanding balance into account). If the available credit is less than the requested amount, the remaining available amount will be applied to the payee(s) sequentially (not evenly). Any transfer made will be treated as a cash advance under your Servus Mastercard Account Agreement and will be subject to the terms and conditions of that Agreement.<br/><br/>The balance / funds transfer amount and the transfer fee will be charged to your Account at the cash advance rate of the applicable card. Interest will be charged from the date that the transfer is posted to your Account until you repay the total transferred amount owing. All balance transfers / funds transfer are subject to a fee in an amount equal to the greater of (i) 1% of the amount of the balance / funds transfer and (ii) $7.50. Please allow 3 - 5 business days from the time that you verbally accept and consent to this offer for any balance / funds transfer request to be processed.<br/><br/>For a Low Rate Card, the current cash advance interest rate is 11.99% and for a No Fee / Low Fee / Gold / Platinum / World Elite card the current cash advance interest rate is 24.99%.<br/><br/>For a Business Low Rate Card, the current cash advance interest rate is a variable rate meaning up to Prime + 10% and for a Business No Fee or Business Rewards Mastercard the current cash advance interest rate is 16.99%.<br/><br/>"
+				},
+				{
+					"cardHolderName": null,
+					"status": null,
+					"creditLimit": null,
+					"availableCredit": null,
+					"userCode": "NRC",
+					"pan": null,
+					"panLastFour": null,
+					"product": "New Retail Card Offer",
+					"type": "Business",
+					"offerTerm": 1,
+					"offerRate": 0.0399,
+					"offerMinFee": 7.5,
+					"offerFeePercent": 0.01,
+					"isLowRate": false,
+					"cashRate": null,
+					"isStandingOffer": false,
+					"cardholderSince": "0001-01-01T00:00:00",
+					"isNew": false,
+					"termsAndConditionsHtml": "* You can request a balance transfer on your non-Servus Credit Union credit card or a transfer of funds from your Servus Mastercard Account (your \"Account\") to your Servus chequing or savings account in an amount (including the transfer fee) that does not exceed your current credit limit (taking your outstanding balance into account). If the available credit is less than the requested amount, the remaining available amount will be applied to the payee(s) sequentially (not evenly). Any transfer made under this offer will be treated as a balance transfer / cash advance under your Servus Mastercard Account Agreement and, except as otherwise provided for in this offer, will be subject to the terms and conditions of that Agreement.<br/><br/>The balance / funds transfer amount and the transfer fee will be charged to your Account at a promotional interest rate of 3.99%. Interest will be charged from the date that the transfer is posted to your Account until you repay the total amount that you owe. All balance transfers / funds transfer are subject to a fee in an amount equal to the greater of (i) 1% of the amount of the balance / funds transfer and (ii) $7.50. Please allow 3 - 5 business days from the time that you verbally accept and consent to this offer for any balance / funds transfer request to be processed.<br/><br/>You will be entitled to benefit of the promotional interest rate for the first 2 consecutive billing cycles following the initial posting date of the transfer to your Account. You will lose the benefit of this promotional interest rate and any remaining balances that had the benefit of the promotional interest rate if you miss making your minimum payment due under your Account by the due date. In that circumstance, the balances that were subject to the promotional interest rate will be charged at the rate set out in your Agreement for cash advances and balance transfers starting on the first day of the statement period after your missed payment. For a Low Rate Card the current cash advance and balance transfer cash advance interest rate is 11.99% and for a No Fee / Low Fee / Gold / Platinum / World Elite card the current cash advance and balance transfer interest rate is 24.99%.<br/><br/>†Throughout this correspondence, \"1 month\" is an approximate timeframe as the promotional interest rate applies to 2 consecutive billing cycles, which may be for a period of time that is longer than 1 month in duration.<br/><br/>"
+				}
+			]
+		}
+	},
+	"payee": {
+		"messages": [],
+		"apiVersionNumber": "1.0.0.0",
+		"isSuccess": true,
+		"response": [
+			{
+				"id": 1,
+				"payeeType": "BILL_PAYEE",
+				"display": "Bill payee",
+				"payees": [
+					{
+						"externalId": "264840094",
+						"display": "American Express Cards (Incl LOC) ***********1008",
+						"name": "American Express Cards (Incl LOC)",
+						"accountNumber": "3733*******1008"
+					},
+					{
+						"externalId": "159125849",
+						"display": "Capital One Mastercard ************9595",
+						"name": "Capital One Mastercard",
+						"accountNumber": "5160********9595"
+					},
+					{
+						"externalId": "568142717",
+						"display": "Capital One Mastercard ************6558",
+						"name": "Capital One Mastercard",
+						"accountNumber": "5491********6558"
+					},
+					{
+						"externalId": "553271511",
+						"display": "CIBC - VISA ************3943",
+						"name": "CIBC - VISA",
+						"accountNumber": "4505********3943"
+					},
+					{
+						"externalId": "215125632",
+						"display": "Hudson's Bay Credit Card ************7341",
+						"name": "Hudson's Bay Credit Card",
+						"accountNumber": "6002********7341"
+					},
+					{
+						"externalId": "17674392",
+						"display": "Mastercard, PC Financial ************8718",
+						"name": "Mastercard, PC Financial",
+						"accountNumber": "5181********8718"
+					},
+					{
+						"externalId": "384278469",
+						"display": "TD Canada Trust LOC (Line of Credit) 02234510047",
+						"name": "TD Canada Trust LOC (Line of Credit)",
+						"accountNumber": "02234510047"
+					},
+					{
+						"externalId": "10306751",
+						"display": "TD Canada Trust LOC (Line of Credit) 83303209815",
+						"name": "TD Canada Trust LOC (Line of Credit)",
+						"accountNumber": "83303209815"
+					},
+					{
+						"externalId": "676117008",
+						"display": "Triangle Mastercard ************3742",
+						"name": "Triangle Mastercard",
+						"accountNumber": "5446********3742"
+					}
+				]
+			},
+			{
+				"id": 2,
+				"payeeType": "DEMAND_ACCOUNT",
+				"display": "Demand account",
+				"payees": []
+			}
+		]
+	},
+	"Calculate Fee": {
+	 
+    "messages": [],
+    "apiVersionNumber": "1.0.0.0",
+    "isSuccess": true,
+    "response": {
+        "fee": 2000.0,
+        "paymentTotal": 1000.0,
+        "paymentAndFeeTotal": 3000.0
+    }
+}
+
+}
