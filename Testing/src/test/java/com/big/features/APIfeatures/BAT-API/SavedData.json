@@ -8,5 +8,6 @@
     "ExpectedResponseTime": 1000,
     "minimumFee":10.5, 
     "feePercent":2, 
-    "paymentAmounts":[1000]
+    "paymentAmounts":[1000],
+    "InvalidPaymentAmounts":[111111111111111111111111111111111111111111]
 }
