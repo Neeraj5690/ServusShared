@@ -144,6 +144,45 @@
         "paymentTotal": 1000.0,
         "paymentAndFeeTotal": 3000.0
     }
+},
+"Create":{
+    "messages": [],
+    "apiVersionNumber": "1.0.0.0",
+    "isSuccess": true,
+    "response": {
+        "id": 350,
+        "status": "OPEN",
+        "requestedDate": "2023-06-02T08:26:04.3434773-06:00",
+        "memberNumber": 54320,
+        "partyId": 1654,
+        "cardNumber": "5500001466243903",
+        "cardHolderName": "Dixon, Eleanor",
+        "promotionCode": "SRO",
+        "promotionDescription": "Standing Retail Offer",
+        "duration": -1,
+        "interest": 0.2499,
+        "minFee": 7.50,
+        "feePercent": 0.0100,
+        "creditLimit": 8800.0,
+        "totalRequested": 500.0,
+        "fees": 7.50,
+        "totalAmount": 507.50,
+        "contactMethod": "EMAIL",
+        "contactInfo": "test@test.com",
+        "applicationPayee": [
+            {
+                "id": 379,
+                "payeeType": "BILL_PAYEE",
+                "externalAccountNumber": "3733*******1008",
+                "externalId": "264840094",
+                "externalName": "American Express Cards (Incl LOC)",
+                "amount": 500.0
+            }
+        ]
+    },
+    "timestamp": "2023-06-02T08:26:04.5935925-06:00",
+    "referenceNumber": null
 }
+
 
 }

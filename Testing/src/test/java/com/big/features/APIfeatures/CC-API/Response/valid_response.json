@@ -1,48 +1,47 @@
 {
-	"Get_Accounts": {
-		"ApiVersionNumber": "2.0.1.0",
-		"ReferenceNumber": null,
-		"Messages": [],
-		"IsSuccess": true,
-		"Response": [
-			{
-				"Cards": [
-					{
-						"HolderName": "Morris, Belinda",
-						"LastFour": "7779",
-						"Product": "LOW FEE",
-						"CardType": "Primary",
-						"Type": "Retail",
-						"Status": "Active",
-						"BusinessName": null,
-						"isActive": 1,
-						"PAN": "5500007119397779",
-						"BillingType": "R",
-						"AccountType": "P",
-						"isTopLevel": false,
-						"isBusiness": false,
-						"isBusinessIndividual": false
-					}
-				],
-				"HolderName": "Morris, Belinda",
-				"LastFour": "4383",
-				"Product": "LOW FEE",
-				"CardType": "Billing",
-				"Type": "Retail",
-				"Status": "Active",
-				"BusinessName": null,
-				"isActive": 1,
-				"PAN": "5500006847694383",
-				"BillingType": "R",
-				"AccountType": "A",
-				"isTopLevel": true,
-				"isBusiness": false,
-				"isBusinessIndividual": false
-			}
-		],
-		"Timestamp": "2023-06-02T01:34:45.5197991-06:00"
-	},
-	"Get_PAN_Details":
+"Get_Accounts": {
+	"ApiVersionNumber": "2.0.1.0",
+	"ReferenceNumber": null,
+	"Messages": [],
+	"IsSuccess": true,
+	"Response": [
+		{
+			"Cards": [
+				{
+					"HolderName": "Morris, Belinda",
+					"LastFour": "7779",
+					"Product": "LOW FEE",
+					"CardType": "Primary",
+					"Type": "Retail",
+					"Status": "Active",
+					"BusinessName": null,
+					"isActive": 1,
+					"PAN": "5500007119397779",
+					"BillingType": "R",
+					"AccountType": "P",
+					"isTopLevel": false,
+					"isBusiness": false,
+					"isBusinessIndividual": false
+				}
+			],
+			"HolderName": "Morris, Belinda",
+			"LastFour": "4383",
+			"Product": "LOW FEE",
+			"CardType": "Billing",
+			"Type": "Retail",
+			"Status": "Active",
+			"BusinessName": null,
+			"isActive": 1,
+			"PAN": "5500006847694383",
+			"BillingType": "R",
+			"AccountType": "A",
+			"isTopLevel": true,
+			"isBusiness": false,
+			"isBusinessIndividual": false
+		}
+	]
+},
+"Get_PAN_Details":
 {
     "ApiVersionNumber": "2.0.1.0",
     "ReferenceNumber": null,
@@ -146,7 +145,6 @@
         "isTopLevel": true,
         "isBusiness": false,
         "isBusinessIndividual": false
-    },
-    "Timestamp": "2023-06-02T03:40:42.0812396-06:00"
+    }
 }
 }
