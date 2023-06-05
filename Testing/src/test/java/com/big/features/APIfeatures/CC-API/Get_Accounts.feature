@@ -3,7 +3,7 @@ Background:
     * def Baseurl = 'https://credit-card-xapi.ca-c1.cloudhub.io/api/v1'
     * def subpath = '/accounts/'
     # Getting Token Data
-    * def resp = call read('1GetToken.feature')
+    * def resp = call read('GetToken.feature')
     * def token = resp.response.access_token
     # Reading Saved Data
     * def jsonPayload = read('SavedData.json')
@@ -37,7 +37,6 @@ Background:
    # 1 Mule API response with valid input
   Scenario: 1 Check for Mule API response with valid input
     Given url Baseurl + subpath + PartyID
-    #And request {"memberNumber": '#(MemberNumber)'}
     And header Authorization = 'Bearer '+ token
     When method GET
     Then status 200
@@ -45,7 +44,6 @@ Background:
    # 2 Mule API response with valid request header - [Connection,Accept]
   Scenario: 2 Check for Mule API response with valid request header - [Content-Type]
     Given url Baseurl + subpath + PartyID
-    #And request {"memberNumber": '#(MemberNumber)'}
     And header Connection = Connection
     And header Accept = Accept
     And header Authorization = 'Bearer '+ token
@@ -55,7 +53,6 @@ Background:
    # 3 Mule API response with Invalid request header - [Content-Type]
   Scenario: 3 Check for Mule API response with Invalid request header - [Content-Type]
     Given url Baseurl + subpath + PartyID
-    #And request {"memberNumber": '#(MemberNumber)'}
     And header Content-Type = InvalidContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -113,7 +110,7 @@ Background:
 
 
     # 7 Valid PartyID
-  Scenario: 7 Check for response and compare same with layer 7 for valid key body parameter -[PartyID]
+  Scenario: 7 Check for response and compare same with layer 7 for valid parameter -[PartyID]
     Given url Baseurl + subpath + PartyID
     #And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
@@ -132,7 +129,7 @@ Background:
    
    
     # 8 invalid member number
-  Scenario: 8 Check for response and compare same with layer 7 for invalid key body parameter - [PartyID]
+  Scenario: 8 Check for response and compare same with layer 7 for invalid parameter - [PartyID]
     Given url Baseurl + subpath + PartyIDInvalid
     #And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token

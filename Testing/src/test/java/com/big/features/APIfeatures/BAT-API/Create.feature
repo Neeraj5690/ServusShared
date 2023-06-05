@@ -61,8 +61,7 @@ Feature: BAT | Create API
   # 1 Mule API response with valid input
   Scenario: 1 Check for Mule API response with valid input
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Authorization = 'Bearer '+ token
     When method POST
     * print response
@@ -71,8 +70,7 @@ Feature: BAT | Create API
   # 2 Mule API response with valid request header - [Content-Type]
   Scenario: 2 Check for Mule API response with valid request header - [Content-Type]
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -82,9 +80,7 @@ Feature: BAT | Create API
   # 3 Mule API response with Invalid request header - [Content-Type]
   Scenario: 3 Check for Mule API response with Invalid request header - [Content-Type]
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
-    And request {"xyz": 'xyz'}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = InvalidContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -94,8 +90,7 @@ Feature: BAT | Create API
   # 4 response headers - Content-Length
   Scenario: 4 Check for response headers and its values and compare same with layer 7 - [Content-Length]
     Given url Baseurl + subpath
-  * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -112,8 +107,7 @@ Feature: BAT | Create API
   # 5 response headers - Content-Type
   Scenario: 5 Check for response headers and its values and compare same with layer 7 - [Content-Type]
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -130,8 +124,7 @@ Feature: BAT | Create API
   # 6 ResponseTime
   Scenario: 6 Check for responseTime and compare with expected response time - [ResponseTime]
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -147,11 +140,10 @@ Feature: BAT | Create API
     # Matching response data
     * assert responseTime <= Expected_responseTime
 
-  # 7 Valid Payment Amount 
-  Scenario: 7 Check for response and compare same with layer 7 for valid key body parameter -[PaymentAmounts]
+  # 7 Valid member number 
+  Scenario: 7 Check for response and compare same with layer 7 for valid key body parameter -[member number]
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -162,16 +154,15 @@ Feature: BAT | Create API
     * karate.remove('response', 'timestamp')
     * karate.remove('response', 'referenceNumber')
     # Reading L7 saved Response
-    * def L7_response_data = L7_response['Calculate Fee']
+    * def L7_response_data = L7_response['Create']
     And print L7_response_data
     # Matching response data
     * match L7_response_data == Response_mule
 
-  # 8 invalid PaymentAmounts
-  Scenario: 8 Check for response and compare same with layer 7 for invalid key body parameter - [PaymentAmounts]
+  # 8 invalid member number
+  Scenario: 8 Check for response and compare same with layer 7 for invalid key body parameter - [member number]
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumberInvalid)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -184,8 +175,8 @@ Feature: BAT | Create API
     * print MuleResponse_messageTitle
     # Reading L7 saved Response
     * print L7_InvalidResponse
-    * def L7Response_messageText = L7_InvalidResponse['Calculate Fee']['errors']['paymentAmounts'][0]
-    * def L7Response_messageTitle = L7_InvalidResponse['Calculate Fee']['title']
+    * def L7Response_messageText = L7_InvalidResponse['Create']['errors']['paymentAmounts'][0]
+    * def L7Response_messageTitle = L7_InvalidResponse['Create']['title']
     # Matching response data
     * match L7Response_messageText == MuleResponse_messageText
     * match L7Response_messageTitle == MuleResponse_messageTitle
@@ -194,8 +185,7 @@ Feature: BAT | Create API
   # 9 Invalid Authentication Token
   Scenario: 9 Check for Mule api response with Invalid Authentication Token
     Given url Baseurl + subpath
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ tokenInvalid
     When method POST
@@ -205,8 +195,7 @@ Feature: BAT | Create API
   # 10 Missing Content in body
   Scenario: 10 Check for Mule api response with missing Content in body
     Given url Baseurl + subpath
-    #* def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    #And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
+    #And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -215,12 +204,10 @@ Feature: BAT | Create API
     * match response['errors'][''][0] == 'A non-empty request body is required.'
 
   # 11 Increased input limit
-  Scenario: 11 Check for Mule api response with Increased input limit in filed - [PaymentAmounts]
+  Scenario: 11 Check for Mule api response with Increased input limit in filed - [memberNumber]
     Given url Baseurl + subpath
     And print MemberNumber
-    * def PayeeRequests = {"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": 'PayeeType',"display": 'Display'} 
-    And request {"memberNumber": '#(MemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": 'PromotionCode',"fees": '#(Fees)',"contactMethod": 'ContactMethod',"contactInfo": 'ContactInfo',"userId": '#(UserId)', "payeeRequests": ['#(PayeeRequests)']}
-    #And request {"minimumFee": '#(MinimumFee)',"feePercent": '#(FeePercent)',"paymentAmounts": '#(InvalidPaymentAmounts)'}
+    And request {"memberNumber": '#(LargeMemberNumber)',"partyId": '#(PartyId)',"cardNumber": '#(CardNumber)', "cardHolderName": 'CardHolderName',"creditLimit": '#(CreditLimit)',"promotionCode": '#(PromotionCode)',"fees": '#(Fees)',"contactMethod": "EMAIL","contactInfo": '#(ContactInfo)',"userId": '#(UserId)', "payeeRequests": [{"amount": '#(Amount)',"externalId": '#(ExternalId)',"payeeType": '#(PayeeType)',"display": '#(Display)'}]}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
