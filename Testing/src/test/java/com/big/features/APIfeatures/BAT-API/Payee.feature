@@ -11,7 +11,7 @@ Feature: BAT | Payee API
     * def ContentType = jsonPayload.ContentType
     * def InvalidContentType = jsonPayload.InvalidContentType
     * def tokenInvalid = jsonPayload.InvalidToken
-    * def ExpectedResponseTime = jsonPayload.ExpectedResponseTime
+    * def ExpectedResponseTime = jsonPayload.ExpectedResponseTime_Payee
     * def MemberNumber = jsonPayload.memberNumber
     * def MemberNumberInvalid = jsonPayload.memberNumberInvalid
     * def LargeMemberNumber = jsonPayload.LargeMemberNumber

@@ -10,6 +10,6 @@ Feature: Get cc Token
     * form field scope = 'read:account'
   	When method POST
   	Then status 200
-  	* def tokn = response.access_token
-	  * print 'Token = ', tokn
+  	* def token = response.access_token
+	  * print 'Token = ', token
  

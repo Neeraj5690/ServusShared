@@ -136,7 +136,7 @@ Feature: BAT | Create API
     # Reading expected saved Response
     * def Expected_responseTime = ExpectedResponseTime
     And print Expected_responseTime
-    * def Layer7_responseTime = 686
+    * def Layer7_responseTime = 5610
     # Matching response data
     * assert responseTime <= Expected_responseTime
 

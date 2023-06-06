@@ -4,7 +4,7 @@ Background:
     * def subpath = '/accounts/'
     # Getting Token Data
     * def resp = call read('GetToken.feature')
-    * def token = resp.response.access_token
+    * def token = resp.token
     # Reading Saved Data
     * def jsonPayload = read('SavedData.json')
     * def ContentType = jsonPayload.ContentType

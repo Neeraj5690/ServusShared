@@ -11,7 +11,7 @@ Feature: BAT | Calculate Fee API
     * def ContentType = jsonPayload.ContentType
     * def InvalidContentType = jsonPayload.InvalidContentType
     * def tokenInvalid = jsonPayload.InvalidToken
-    * def ExpectedResponseTime = jsonPayload.ExpectedResponseTime
+    * def ExpectedResponseTime = jsonPayload.ExpectedResponseTime_CalculateFee
     * def MemberNumber = jsonPayload.memberNumber
     * def MemberNumberInvalid = jsonPayload.memberNumberInvalid
     * def LargeMemberNumber = jsonPayload.LargeMemberNumber
@@ -35,6 +35,7 @@ Feature: BAT | Calculate Fee API
     # Reading Layer 7 Saved Data
     * def L7_response = read('Response/valid_response.json')
     * def L7_InvalidResponse = read('Response/Invalid_response.json')
+    * def L7_EmptyResponse = read('Response/Empty_response.json')
     * def Expected_headers = read('Response/Layer7_header_response.json')
 
   # 1 Mule API response with valid input
@@ -115,7 +116,7 @@ Feature: BAT | Calculate Fee API
     # Reading expected saved Response
     * def Expected_responseTime = ExpectedResponseTime
     And print Expected_responseTime
-    * def Layer7_responseTime = 686
+    * def Layer7_responseTime = 228
     # Matching response data
     * assert responseTime <= Expected_responseTime
 
@@ -141,7 +142,7 @@ Feature: BAT | Calculate Fee API
   # 8 invalid PaymentAmounts
   Scenario: 8 Check for response and compare same with layer 7 for invalid key body parameter - [PaymentAmounts]
     Given url Baseurl + subpath
-    And request {"minimumFee": '#(MinimumFee)',"feePercent": '#(FeePercent)',"paymentAmounts": 'abc'}
+    And request {"minimumFee": '#(MinimumFee)',"feePercent": '#(FeePercent)',"paymentAmounts": '#(InvalidPaymentAmounts)'}
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method POST
@@ -179,8 +180,16 @@ Feature: BAT | Calculate Fee API
     And header Authorization = 'Bearer '+ token
     When method POST
     * print response
-    Then status 400
-    * match response['errors'][''][0] == 'A non-empty request body is required.'
+    Then status 415
+    #Getting Mule Response
+    * def MuleResponse_messageText = response['errors']['paymentAmounts'][0]
+    * print MuleResponse_messageText
+    # Reading L7 saved Response
+    * print L7_InvalidResponse
+    * def L7Response_messageText = L7_EmptyResponse['Calculate Fee']['title']
+    * print L7Response_messageText
+    * match L7Response_messageText == MuleResponse_messageText
+    
 
   # 11 Increased input limit
   Scenario: 11 Check for Mule api response with Increased input limit in filed - [PaymentAmounts]

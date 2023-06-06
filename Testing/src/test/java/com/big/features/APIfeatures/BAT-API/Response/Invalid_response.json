@@ -47,5 +47,17 @@
 		    "timestamp": "2023-06-02T05:53:22.1246501-06:00",
 		    "referenceNumber": ""
 		}
+	},
+	"Calculate Fee":{
+    "errors": {
+        "PaymentAmounts": [
+            "The PaymentAmounts field is required."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|d8f40bcc-46b3ecf4239f726c."
 	}
+	
 }
