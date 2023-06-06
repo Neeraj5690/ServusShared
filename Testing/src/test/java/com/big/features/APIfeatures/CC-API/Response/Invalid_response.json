@@ -1,3 +1,4 @@
+{"GetAccounts":
 {
 	"InvalidPartyid": {
 	    "ApiVersionNumber": "2.0.1.0",
@@ -20,5 +21,31 @@
     "IsSuccess": false,
     "Response": null,
     "Timestamp": "2023-06-02T01:42:48.5206789-06:00"
+},
+"InvalidToken":
+{
+    
+}
+},
+"GetAccountPanDetails":
+{ "InvalidPanNumber":
+ {
+    "ApiVersionNumber": "2.0.1.0",
+    "ReferenceNumber": null,
+    "Messages": [
+        {
+            "MessageCode": "20006",
+            "MessageText": "Not found GetAccountDetail_v4 PAN = {pan}",
+            "MessageSeverity": "Error"
+        }
+    ],
+    "IsSuccess": false,
+    "Response": null,
+    "Timestamp": "2023-06-02T01:51:13.4437577-06:00"
+ },
+ "InvalidToken":
+  {
+    
+  }
 }
 }

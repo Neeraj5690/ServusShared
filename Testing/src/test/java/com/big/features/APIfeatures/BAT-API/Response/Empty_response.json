@@ -1,15 +1,19 @@
 {
-	"Member": {
-		
-	},
-	"Payee": {
-	  
-	},
-	"Calculate Fee":{
+	"Empty": {
     "type": "https://tools.ietf.org/html/rfc7231#section-6.5.13",
     "title": "Unsupported Media Type",
     "status": 415,
-    "traceId": "|e86b89f1-48386364b231aac7."
+    "traceId": "|ecdcdaa0-4fed1a415a35d5b3."
+},
+	"EmptyWithContentType": {
+    "errors": {
+        "": [
+            "A non-empty request body is required."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|ecdcdab2-4fed1a415a35d5b3."
 }
-	
 }
