@@ -1,7 +1,7 @@
 Feature: CC XAPI | Get Accounts
 Background:
     * def Baseurl = 'https://credit-card-xapi.ca-c1.cloudhub.io/api/v1'
-    * def subpath = '/accounts/'
+    * def subpath = '/account/'
     # Getting Token Data
     * def resp = call read('GetToken.feature')
     * def token = resp.token
@@ -13,10 +13,12 @@ Background:
     * def Accept = jsonPayload.Accept
     * def tokenInvalid = jsonPayload.InvalidToken
     * def ExpectedResponseTime = jsonPayload.ExpectedResponseTime_Accounts
-    * def PartyID = jsonPayload.PartyID
-    * def PartyIDInvalid = jsonPayload.PartyIDInvalid
-    * def StringPartyID = jsonPayload.StringPartyID
-    * def LargePartyID = jsonPayload.LargePartyID
+    * def PAN = jsonPayload.PAN
+    * def PANInvalid = jsonPayload.PANInvalid
+    * def StringPAN = jsonPayload.StringPAN
+    * def PANInvalidLength = jsonPayload.PANInvalidLength
+    * def resolutionValid = jsonPayload.resolutionValid
+    * def resolutionInvalid = jsonPayload.resolutionInvalid
     # Printing saved data
     * print token
     * print jsonPayload
@@ -24,11 +26,13 @@ Background:
     * print Connection
     * print tokenInvalid
     * print ExpectedResponseTime
-    * print PartyID
     * print Accept
-    * print PartyIDInvalid
-    * print StringPartyID
-    * print LargePartyID
+    * print PAN 
+    * print PANInvalid
+    * print StringPAN
+    * print PANInvalidLength
+    * print resolutionValid
+    * print resolutionInvalid
     # Reading Layer 7 Saved Data
     * def L7_ValidResponse = read('Response/valid_response.json')
     * def L7_InvalidResponse = read('Response/Invalid_response.json')
@@ -36,14 +40,14 @@ Background:
    
    # 1 Mule API response with valid input
   Scenario: 1 Check for Mule API response with valid input
-    Given url Baseurl + subpath + PartyID
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     And header Authorization = 'Bearer '+ token
     When method GET
     Then status 200
    
    # 2 Mule API response with valid request header - [Connection,Accept]
   Scenario: 2 Check for Mule API response with valid request header - [Content-Type]
-    Given url Baseurl + subpath + PartyID
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     And header Connection = Connection
     And header Accept = Accept
     And header Authorization = 'Bearer '+ token
@@ -52,7 +56,7 @@ Background:
    
    # 3 Mule API response with Invalid request header - [Content-Type]
   Scenario: 3 Check for Mule API response with Invalid request header - [Content-Type]
-    Given url Baseurl + subpath + PartyID
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     And header Content-Type = InvalidContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -61,7 +65,7 @@ Background:
    
     # 4 response headers - Content-Length
   Scenario: 4 Check for response headers and its values and compare same with layer 7 - [Content-Length]
-    Given url Baseurl + subpath + PartyID
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     #And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -78,7 +82,7 @@ Background:
 
     # 5 response headers - Content-Type
   Scenario: 5 Check for response headers and its values and compare same with layer 7 - [Content-Type]
-    Given url Baseurl + subpath + PartyID
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     #And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -94,7 +98,7 @@ Background:
    
     # 6 ResponseTime
   Scenario: 6 Check for responseTime and compare with expected response time - [ResponseTime]
-    Given url Baseurl + subpath + PartyID
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -109,9 +113,9 @@ Background:
     * assert responseTime <= ExpectedResponseTime
 
 
-    # 7 Valid PartyID
-  Scenario: 7 Check for response and compare same with layer 7 for valid parameter -[PartyID]
-    Given url Baseurl + subpath + PartyID
+    # 7 Valid resolution
+  Scenario: 7 Check for response and compare same with layer 7 for valid parameter -[resolution]
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -128,9 +132,9 @@ Background:
     * match L7_response_data == Response_mule   
    
    
-    # 8 invalid PartyID
-  Scenario: 8 Check for response and compare same with layer 7 for invalid parameter - [PartyID]
-    Given url Baseurl + subpath + PartyIDInvalid
+    # 8 invalid resolution
+  Scenario: 8 Check for response and compare same with layer 7 for invalid parameter - [resolution]
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionInvalid
     #And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -153,7 +157,7 @@ Background:
    
  		# 9 Invalid Authentication Token
   Scenario: 9 Check for Mule api response with Invalid Authentication Token
-    Given url Baseurl + subpath + PartyIDInvalid
+    Given url Baseurl + subpath + PAN + "/detail?resolution=" + resolutionValid
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ tokenInvalid
     When method GET

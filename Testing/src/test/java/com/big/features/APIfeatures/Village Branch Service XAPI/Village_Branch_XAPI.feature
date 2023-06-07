@@ -1,4 +1,4 @@
-@ignore
+
 Feature: Village Branch Service
 Background:
     * def Baseurl = 'https://village-branch-directory-xapi.ca-c1.cloudhub.io/api/v1/'
