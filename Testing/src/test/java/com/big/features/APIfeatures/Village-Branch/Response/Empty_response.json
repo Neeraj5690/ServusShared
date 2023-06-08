@@ -1,0 +1,15 @@
+{
+	"Member": {
+		
+	},
+	"Payee": {
+	  
+	},
+	"Calculate Fee":{
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.13",
+    "title": "Unsupported Media Type",
+    "status": 415,
+    "traceId": "|e86b89f1-48386364b231aac7."
+}
+	
+}
