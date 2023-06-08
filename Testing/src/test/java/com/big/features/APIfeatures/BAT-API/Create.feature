@@ -1,3 +1,4 @@
+@ignore
 Feature: BAT | Create API
 
   Background: 

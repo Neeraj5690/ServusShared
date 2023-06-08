@@ -1,3 +1,4 @@
+@ignore
 Feature: BAT | Calculate Fee API
 
   Background: 

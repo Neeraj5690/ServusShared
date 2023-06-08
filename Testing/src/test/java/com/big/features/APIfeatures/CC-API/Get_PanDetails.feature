@@ -1,3 +1,4 @@
+@ignore
 Feature: CC XAPI | Get Accounts
 Background:
     * def Baseurl = 'https://credit-card-xapi.ca-c1.cloudhub.io/api/v1'

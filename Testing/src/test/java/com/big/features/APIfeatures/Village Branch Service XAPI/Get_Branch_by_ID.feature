@@ -36,14 +36,14 @@ Background:
    
    # 1 Mule API response with valid input
   Scenario: 1 Check for Mule API response with valid input
-    Given url Baseurl + subpath + PAN + "/transactions"
+    Given url Baseurl + subpath + ValidBranchID
     And header Authorization = 'Bearer '+ token
     When method GET
     Then status 200
    
    # 2 Mule API response with valid request header - [Connection,Accept]
   Scenario: 2 Check for Mule API response with valid request header - [Content-Type]
-    Given url Baseurl + subpath + PAN + "/transactions"
+    Given url Baseurl + subpath + ValidBranchID
     And header Connection = Connection
     And header Accept = Accept
     And header Authorization = 'Bearer '+ token
@@ -52,7 +52,7 @@ Background:
    
    # 3 Mule API response with Invalid request header - [Content-Type]
   Scenario: 3 Check for Mule API response with Invalid request header - [Content-Type]
-    Given url Baseurl + subpath + PAN + "/transactions"
+    Given url Baseurl + subpath + ValidBranchID
     And header Content-Type = InvalidContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -61,8 +61,7 @@ Background:
    
     # 4 response headers - Content-Length
   Scenario: 4 Check for response headers and its values and compare same with layer 7 - [Content-Length]
-    Given url Baseurl + subpath + PAN + "/transactions"
-    #And header Content-Type = ContentType
+    Given url Baseurl + subpath + ValidBranchIDe
     And header Authorization = 'Bearer '+ token
     When method GET
     * print response
@@ -78,8 +77,7 @@ Background:
 
     # 5 response headers - Content-Type
   Scenario: 5 Check for response headers and its values and compare same with layer 7 - [Content-Type]
-    Given url Baseurl + subpath + PAN + "/transactions"
-    #And header Content-Type = ContentType
+    Given url Baseurl + subpath + ValidBranchID
     And header Authorization = 'Bearer '+ token
     When method GET
     * print response
@@ -94,7 +92,7 @@ Background:
    
     # 6 ResponseTime
   Scenario: 6 Check for responseTime and compare with expected response time - [ResponseTime]
-    Given url Baseurl + subpath + PAN + "/transactions"
+    Given url Baseurl + subpath + ValidBranchID
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -109,9 +107,9 @@ Background:
     * assert responseTime <= ExpectedResponseTime
 
 
-    # 7 Valid PAN
-  Scenario: 7 Check for response and compare same with layer 7 for valid parameter -[PAN]
-    Given url Baseurl + subpath + PAN + "/transactions"
+    # 7 Valid BranchID
+  Scenario: 7 Check for response and compare same with layer 7 for valid parameter -[BranchID]
+    Given url Baseurl + subpath + ValidBranchID
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -128,9 +126,9 @@ Background:
     * match L7_response_data == Response_mule   
    
    
-    # 8 invalid PAN
-  Scenario: 8 Check for response and compare same with layer 7 for invalid parameter - [PartyID]
-    Given url Baseurl + subpath + PANInvalid + "/transactions"
+    # 8 invalid BranchID
+  Scenario: 8 Check for response and compare same with layer 7 for invalid parameter - [InvalidBranchID]
+    Given url Baseurl + subpath + InvalidBranchID
     #And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -153,7 +151,7 @@ Background:
    
  		# 9 Invalid Authentication Token
   Scenario: 9 Check for Mule api response with Invalid Authentication Token
-    Given url Baseurl + subpath + PAN + "/transactions"
+    Given url Baseurl + subpath + ValidBranchID
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ tokenInvalid
     When method GET

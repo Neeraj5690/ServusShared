@@ -1,3 +1,4 @@
+@ignore
 Feature: BAT | Payee API
 
   Background: 

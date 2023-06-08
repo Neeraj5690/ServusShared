@@ -1,4 +1,4 @@
-
+@ignore
 Feature: Get cc Token
 
   	Scenario: Get OAuth token

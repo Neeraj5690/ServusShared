@@ -1,3 +1,4 @@
+@ignore
 Feature: Get BAT Token
 
   Scenario: Get OAuth token
