@@ -1,0 +1,14 @@
+{
+    "ContentType" : "application/json",
+    "InvalidContentType" : "xapplication/json",
+    "Connection" : "keep-alive",
+    "Accept" : "*/*",
+    "Connection" : "keep-alive",
+    "ExpectedResponseTime_Accounts":1000
+    "ValidBranchID": 1,
+    "InvalidBranchID": "abc",
+    "LongBranchID": 12345678912345,
+    "NoBranchID": -1
+            
+}
+
