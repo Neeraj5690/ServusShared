@@ -1,0 +1,20 @@
+{
+"Get_Accounts":{
+  "Response Headers": {
+    "content-type": "application/json;charset=utf-8",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "date": "Tue, 30 May 2023 05:14:20 GMT",
+    "content-length": "345"
+  }
+},
+"Get_Pan_Details":{
+  "Response Headers": {
+    "content-type": "application/json; charset=utf-8",
+    "server": "Microsoft-IIS/10.0",
+    "x-powered-by": "ASP.NET",
+    "date": "Wed, 31 May 2023 09:35:51 GMT",
+    "content-length": "904"
+  }
+ }
+}
