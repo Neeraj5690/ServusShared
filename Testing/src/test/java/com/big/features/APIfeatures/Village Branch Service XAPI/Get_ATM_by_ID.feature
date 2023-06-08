@@ -1,7 +1,7 @@
 Feature: Village Branch | Get Branch by ID
 Background:
     * def Baseurl = 'https://village-branch-directory-xapi.ca-c1.cloudhub.io/api/v1'
-    * def subpath = '/branch/'
+    * def subpath = '/atm/'
     # Getting Token Data
     * def resp = call read('GetToken.feature')
     * def token = resp.token
@@ -36,14 +36,14 @@ Background:
    
    # 1 Mule API response with valid input
   Scenario: 1 Check for Mule API response with valid input
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Authorization = 'Bearer '+ token
     When method GET
     Then status 200
    
    # 2 Mule API response with valid request header - [Connection,Accept]
   Scenario: 2 Check for Mule API response with valid request header - [Content-Type]
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Connection = Connection
     And header Accept = Accept
     And header Authorization = 'Bearer '+ token
@@ -52,7 +52,7 @@ Background:
    
    # 3 Mule API response with Invalid request header - [Content-Type]
   Scenario: 3 Check for Mule API response with Invalid request header - [Content-Type]
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Content-Type = InvalidContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -61,7 +61,7 @@ Background:
    
     # 4 response headers - Content-Length
   Scenario: 4 Check for response headers and its values and compare same with layer 7 - [Content-Length]
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Authorization = 'Bearer '+ token
     When method GET
     * print response
@@ -77,7 +77,7 @@ Background:
 
     # 5 response headers - Content-Type
   Scenario: 5 Check for response headers and its values and compare same with layer 7 - [Content-Type]
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Authorization = 'Bearer '+ token
     When method GET
     * print response
@@ -92,7 +92,7 @@ Background:
    
     # 6 ResponseTime
   Scenario: 6 Check for responseTime and compare with expected response time - [ResponseTime]
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -109,7 +109,7 @@ Background:
 
     # 7 Valid BranchID
   Scenario: 7 Check for response and compare same with layer 7 for valid parameter -[BranchID]
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -128,7 +128,7 @@ Background:
    
     # 8 invalid BranchID
   Scenario: 8 Check for response and compare same with layer 7 for invalid parameter - [InvalidBranchID]
-    Given url Baseurl + subpath + InvalidBranchID
+    Given url Baseurl + subpath + InvalidValidATMID
     #And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ token
     When method GET
@@ -151,7 +151,7 @@ Background:
    
  		# 9 Invalid Authentication Token
   Scenario: 9 Check for Mule api response with Invalid Authentication Token
-    Given url Baseurl + subpath + ValidBranchID
+    Given url Baseurl + subpath + ValidATMID
     And header Content-Type = ContentType
     And header Authorization = 'Bearer '+ tokenInvalid
     When method GET

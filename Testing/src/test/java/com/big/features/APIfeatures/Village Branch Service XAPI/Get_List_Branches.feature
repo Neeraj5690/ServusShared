@@ -1,7 +1,7 @@
 Feature: Village Branch | Get Branch by ID
 Background:
     * def Baseurl = 'https://village-branch-directory-xapi.ca-c1.cloudhub.io/api/v1'
-    * def subpath = '/branch/'
+    * def subpath = '/branch?branchIds=/'
     # Getting Token Data
     * def resp = call read('GetToken.feature')
     * def token = resp.token
