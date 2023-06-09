@@ -160,37 +160,3 @@ Background:
     When method GET
     * print response
     Then status 401
-
-  
-  #Scenario: Get Details w/o real-time
-  #	* def Expected_output = read('Response/Get_details1.json')
-  #	Given url Baseurl + '/account/5900001228827406/detail?resolution=None'
-    #And header Authorization = 'Bearer ' + token
-    #When method GET
-    #Then status 200
-    #* print 'response:', response
-    #And match response == Expected_output
-        #
-  #Scenario: Get Details w/real-time
-  #	* def Expected_output = read('Response/Get_details2.json')
-  #	Given url Baseurl + '/account/5900001228827406/detail?resolution=None'
-    #And header Authorization = 'Bearer ' + token
-    #When method GET
-    #Then status 200
-    #* print 'response:', response      
- #		And match response == Expected_output
- #		
-   #Scenario: Get Transactions
-   #	* def Expected_output = read('Response/Get_transactions_response.json')
-  #	Given url Baseurl + '/account/5500003368564098/transactions'
-    #And header Authorization = 'Bearer ' + token
-    #When method GET
-    #Then status 200
-    #* print 'response:', response      
- #		And match response == Expected_output
- #		 
-   #Scenario: Get Health Check
-  #	Given url Baseurl + '/healthcheck'
-    #When method GET
-    #Then status 200
-    #* print 'response:', response  
