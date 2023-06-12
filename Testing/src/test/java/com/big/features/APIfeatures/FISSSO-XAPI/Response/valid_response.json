@@ -1,0 +1,27 @@
+{
+	"Get_Cards": 
+	{
+    "messages": [],
+    "apiVersionNumber": "1.0.0.0",
+    "isSuccess": true,
+    "response": [
+        {
+            "pan": "3016"
+        }
+    ],
+    "timestamp": "2023-06-09T11:53:07.0500268-06:00",
+    "referenceNumber": null
+	},
+	
+	"Get_SSO_Token":
+	{
+    "messages": [],
+    "apiVersionNumber": "1.0.0.0",
+    "isSuccess": true,
+    "response": {
+        "token": "sbjaDv-ejcmMAVT3BDZIcOIFDIkmYwH538W1qMkclrONXIjtigOzcP9WI-XcZ4R6nu8zXbKs4V1iG8IAzxFy46LtG0h1p813FvRbdN6RtnG1pm1WIKqGWgCNifRuyVdv8lxOPAR0N8_3Wdc_hQ8cW97ZbJItsVeYZsKhdEGnGj3ZqUIxXb2g-YUF2NnveI-54SW6fJCJISMM5LAn-V7xFw6xro3-GCI2joGBbhgPGR7xv5zFmGgGnayHjrUhDhxWbEgaLApMybBb3qyUJxwGNMfZON3fCezKtPBMot5J6JIV_lfpUzQxeLQd5VRu3900nhqGG1G5k5y7o-N6WsaLISTXSFTRnrJLqDo9xE9Q_1lldD_A5gaZhkqM8ko8JZBoViJ6y85ryXWNrm7UFS-Mzw.."
+    },
+    "timestamp": "2023-06-09T11:53:52.6813002-06:00",
+    "referenceNumber": null
+	}
+}

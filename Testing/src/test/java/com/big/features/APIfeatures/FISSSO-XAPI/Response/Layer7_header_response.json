@@ -1,0 +1,20 @@
+{
+"Get_Cards":{
+  "Response Headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Fri, 09 Jun 2023 17:42:09 GMT",
+    "server": "nginx",
+    "content-length": "213",
+    "connection": "keep-alive"
+  }
+},
+"Get_SSO_Token":{
+  "Response Headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Fri, 09 Jun 2023 17:44:05 GMT",
+    "server": "nginx",
+    "content-length": "606",
+    "connection": "keep-alive"
+  }
+ }
+}

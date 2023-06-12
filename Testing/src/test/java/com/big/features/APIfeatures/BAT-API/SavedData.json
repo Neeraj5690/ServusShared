@@ -1,0 +1,40 @@
+{
+    "ContentType" : "application/json",
+    "InvalidContentType" : "xapplication/json",
+    "memberNumber": 54320,
+    "memberNumberInvalid": aaaa,
+    "memberNumberInvalid2": 12345,
+    "LargeMemberNumber": 12345678901234567890,
+    "InvalidToken" : "xeyJraWQiOiJDNkVjZzJFQlk0QTR6LTZvWGlvX0FldDQ5cDNtUlU0UGdTZnVJZ2RmbEQwIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm9DSVNUSnp0Y1VOeV9fZG9qVjJDcXRKQUhHQmdabHVuMG1sdXhJQmVVcW8iLCJpc3MiOiJodHRwczovL3NlcnZ1cy5va3RhcHJldmlldy5jb20vb2F1dGgyL2F1c3VldW1waWlHdkZ0OGthMGg3IiwiYXVkIjoiYXBpOi8vYmF0LWRldiIsImlhdCI6MTY4NTcyMzMxMCwiZXhwIjoxNjg1NzI2OTEwLCJjaWQiOiIwb2F0cjA4YnY4Wnh6WnhPZDBoNyIsInNjcCI6WyJzdWJtaXNzaW9uIl0sInN1YiI6IjBvYXRyMDhidjhaeHpaeE9kMGg3In0.dZP3AJVuTIAhGAjEFW8e7oBEYxuXINY9aP080ihRMTaDMF4MhhXzbxHuUjeHuCePA3iAvLx8a_420YZ1T3bqJBUlLnfh6HnlI-lTrGPftNqls-LD8rxpKizmLfMqycRFgIZBE_cBo4uYcH4rFinv0xMNtsQbMogPdjo3jCiZ2Pu5avYmBvpnLiAZBqJswSSe9q00gbRggZnElU8Au2SHbXKKCWGDUhCxBq4bGkOmSHeFOubCO2gdntzo2wTkS8tPcEicuRrxuhQrG4RmRVnGxq6YsZecFDEKfGponr2ErlHlrkEgrS_jXKeQ4SHTCaSGIilXPl2c3b8L1TnFzd_f1A",
+    "ExpectedResponseTime_Create": 5000,
+    "ExpectedResponseTime_Member": 1100,
+    "ExpectedResponseTime_Payee": 1000,
+    "ExpectedResponseTime_CalculateFee": 1000,
+    "apiName":"BAT XAPI",
+    "status": "Healthy",
+    "minimumFee":10.5, 
+    "feePercent":2, 
+    "paymentAmounts":[1000],
+    "paymentAmountsString":[abc],
+    "LongPaymentAmounts":[111111111111111111111111111111111111111111],
+    "partyId": 1654,
+    "cardNumber": "5500001466243903",
+    "cardHolderName": "Hi FirstName",
+    "creditLimit": 1000,
+    "promotionCode": "SRO",
+    "fees": 7.50,
+    "contactMethod": "email",
+    "contactInfo": "test@test.com",
+    "userId": "10",
+    "payeeRequests": [
+        {
+            "amount": 500.0,
+            "externalId": "264840094",
+            "payeeType": "BILL_PAYEE",
+            "display": "Bill payee"
+        }
+    ]
+    
+    
+}
+

@@ -1,0 +1,89 @@
+{
+	"Get_Cards":{
+		"PartyIDInvalid":{
+		    "messages": [],
+		    "apiVersionNumber": "1.0.0.0",
+		    "isSuccess": true,
+		    "response": [],
+		    "timestamp": "2023-06-09T12:05:35.9908409-06:00",
+		    "referenceNumber": null
+		},
+		"StringPartyID":{
+		    "messages": [
+		        {
+		            "messageCode": "GCCN101",
+		            "messageText": "The PartyId must be a positive integer.",
+		            "messageSeverity": "Error"
+		        }
+		    ],
+		    "apiVersionNumber": "1.0.0.0",
+		    "isSuccess": false,
+		    "response": [],
+		    "timestamp": "2023-06-09T12:06:31.3392745-06:00",
+		    "referenceNumber": null
+		}
+		},
+	"Get_SSO_Token":{
+		"PartyIDInvalid":{
+		    "messages": [
+		        {
+		            "messageCode": "SSOC100",
+		            "messageText": "There was a problem with the PAN service.",
+		            "messageSeverity": "Error"
+		        }
+		    ],
+		    "apiVersionNumber": "1.0.0.0",
+		    "isSuccess": false,
+		    "response": null,
+		    "timestamp": "2023-06-09T12:09:09.6611152-06:00",
+		    "referenceNumber": null
+			},
+		"ccNumberInvalid":{
+		    "StatusCode": 500,
+		    "Message": "Internal Server Error."
+			},
+		"ccNumberString":{
+		    "error": {
+		        "code": "400",
+		        "namespace": "APIKIT",
+		        "identifier": "BAD_REQUEST",
+		        "message": "Invalid value 'abc' for query parameter ccNumber. expected type: Integer, found: String",
+		        "timestamp": "2023-06-09T18:16:26.365Z",
+		        "severity": "ERROR",
+		        "apiName": "Fissso Xapi",
+		        "resource": null,
+		        "method": "GET",
+		        "transactionId": "bf6cd610-06f1-11ee-8033-06e359477e86"
+		    	}
+		    },
+	    "EmptyccNumber":{
+		    "error": {
+		        "code": "400",
+		        "namespace": "APIKIT",
+		        "identifier": "BAD_REQUEST",
+		        "message": "Invalid value '' for query parameter ccNumber. Unsupported chars in string value (probably a binary file)",
+		        "timestamp": "2023-06-09T18:17:12.077Z",
+		        "severity": "ERROR",
+		        "apiName": "Fissso Xapi",
+		        "resource": null,
+		        "method": "GET",
+		        "transactionId": "daab2bc0-06f1-11ee-8033-06e359477e86"
+		    	}
+			},
+		"InvalidEmail":{
+		    "error": {
+		        "code": "400",
+		        "namespace": "APIKIT",
+		        "identifier": "BAD_REQUEST",
+		        "message": "Invalid value 'a' for query parameter email. string [a] does not match pattern ^.+@.+\\..+$",
+		        "timestamp": "2023-06-09T19:19:19.018Z",
+		        "severity": "ERROR",
+		        "apiName": "Fissso Xapi",
+		        "resource": null,
+		        "method": "GET",
+		        "transactionId": "8818ee70-06fa-11ee-8033-06e359477e86"
+		    }
+		}
+	}
+		
+}

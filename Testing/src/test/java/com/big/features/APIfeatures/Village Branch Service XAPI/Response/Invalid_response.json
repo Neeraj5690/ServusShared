@@ -1,0 +1,80 @@
+{
+	"Branch_By_ID": {
+		"InvalidBranchID": {
+			"Message": "The request is invalid."
+		},
+		"NoBranchID": {
+			"Messages": [
+				{
+					"MessageCode": "GBCH100",
+					"MessageText": "We couldn't find the branch",
+					"MessageSeverity": "Information"
+				}
+			],
+			"ApiVersionNumber": "1.3.0.0",
+			"IsSuccess": false,
+			"Response": null
+		}
+	},
+	"List_Branches": {
+		"InvalidBranchID": {
+			"SortField": null,
+			"SortOrder": "asc",
+			"Page": 0,
+			"Row": 0,
+			"Total": 0,
+			"Messages": [],
+			"ApiVersionNumber": "1.3.0.0",
+			"IsSuccess": true,
+			"Response": []
+		},
+		"NoBranchID": {
+			"SortField": null,
+			"SortOrder": "asc",
+			"Page": 0,
+			"Row": 0,
+			"Total": 0,
+			"Messages": [],
+			"ApiVersionNumber": "1.3.0.0",
+			"IsSuccess": true,
+			"Response": []
+		}
+	},
+	"Search_Branch_ATM": {
+		"InvalidBranchName": {
+			"SortField": null,
+			"SortOrder": "asc",
+			"Page": 0,
+			"Row": 0,
+			"Total": 0,
+			"Messages": [],
+			"ApiVersionNumber": "1.3.0.0",
+			"IsSuccess": true,
+			"Response": []
+		}
+	},
+	"List_ATM": {
+    "Total": 0,
+    "Messages": [],
+    "ApiVersionNumber": "1.3.0.0",
+    "IsSuccess": true,
+    "Response": []
+},
+	"ATM_by_ID": {
+		"InvalidATMID": {
+			"Message": "The request is invalid."
+		},
+		"NoATMID": {
+			"Messages": [
+				{
+					"MessageCode": "GACH103",
+					"MessageText": "It is empty value.",
+					"MessageSeverity": "Error"
+				}
+			],
+			"ApiVersionNumber": "1.3.0.0",
+			"IsSuccess": false,
+			"Response": null
+		}
+	}
+}

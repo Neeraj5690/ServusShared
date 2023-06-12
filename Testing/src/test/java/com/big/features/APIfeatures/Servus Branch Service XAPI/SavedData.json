@@ -1,0 +1,22 @@
+{
+    "ContentType" : "application/json",
+    "InvalidContentType" : "xapplication/json",
+    "Connection" : "keep-alive",
+    "Accept" : "*/*",
+    "Connection" : "keep-alive",
+    "ExpectedResponseTime_Accounts":1000,
+    "ValidBranchID": 1,
+    "InvalidBranchID": "abc",
+    "NoBranchID": -1,
+    "BranchName":"Atrium",
+    "InvalidBranchName":"xyz",
+    "BranchCity":"Calgary",
+    "InvalidBranchCity":"xyz",
+    "ValidATMID": 1,
+    "InvalidATMID": "abc",
+    "NoATMID": 0,
+    "apiName":"Village BranchService",
+    "status": "Healthy"
+            
+}
+

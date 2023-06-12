@@ -1,0 +1,108 @@
+{
+	"Member": {
+		"Invalid_no": {
+			"messages": [
+				{
+					"messageCode": "5340",
+					"messageText": "Member cannot be found.",
+					"messageSeverity": "Error"
+				}
+			],
+			"apiVersionNumber": "1.0.0.0",
+			"isSuccess": false,
+			"response": null,
+			"timestamp": "2023-06-01T03:27:59.7143514-06:00",
+			"referenceNumber": ""
+		},
+		"Null_member": {
+			"errors": {
+				"memberNumber": [
+					"Error converting value {null} to type 'System.Int32'. Path 'memberNumber', line 1, position 19."
+				]
+			},
+			"type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+			"title": "One or more validation errors occurred.",
+			"status": 400,
+			"traceId": "|e86b8325-48386364b231aac7."
+		},
+		"Without_body": {
+			"type": "https://tools.ietf.org/html/rfc7231#section-6.5.13",
+			"title": "Unsupported Media Type",
+			"status": 415,
+			"traceId": "|e86b832b-48386364b231aac7."
+		},
+		"StringMember":{
+    "errors": {
+        "memberNumber": [
+            "Could not convert string to integer: aaaa. Path 'memberNumber', line 1, position 22."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|faa67c95-49f8d1e2fd89617c."
+}
+	},
+	"Payee": {
+	  "Invalid_no": {
+		    "messages": [
+		        {
+		            "messageCode": "5340",
+		            "messageText": "Member cannot be found.",
+		            "messageSeverity": "Error"
+		        }
+		    ],
+		    "apiVersionNumber": "1.0.0.0",
+		    "isSuccess": false,
+		    "response": null,
+		    "timestamp": "2023-06-02T05:53:22.1246501-06:00",
+		    "referenceNumber": ""
+		},
+		"StringMember":{
+    "errors": {
+        "memberNumber": [
+            "Could not convert string to integer: aaaa. Path 'memberNumber', line 2, position 26."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|faa67e97-49f8d1e2fd89617c."
+}
+	},
+	"Calculate Fee":{
+	"No_PaymentAmountField":{
+    "errors": {
+        "PaymentAmounts": [
+            "The PaymentAmounts field is required."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|d8f40bcc-46b3ecf4239f726c."
+	},
+	"String_PaymentAmountField":{
+    "errors": {
+        "paymentAmounts[0]": [
+            "Could not convert string to decimal: abc. Path 'paymentAmounts[0]', line 1, position 57."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|faa677e6-49f8d1e2fd89617c."
+	}	
+	},
+	"Create":{
+    "errors": {
+        "memberNumber": [
+            "Could not convert string to integer: aaaa. Path 'memberNumber', line 1, position 22."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|faa67bb7-49f8d1e2fd89617c."
+}
+}

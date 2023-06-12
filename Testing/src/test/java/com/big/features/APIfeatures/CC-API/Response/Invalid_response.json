@@ -1,0 +1,71 @@
+{"GetAccounts":
+{
+	"InvalidPartyid": {
+	    "ApiVersionNumber": "2.0.1.0",
+	    "ReferenceNumber": null,
+	    "Messages": [],
+	    "IsSuccess": true,
+	    "Response": [],
+	    "Timestamp": "2023-06-02T01:41:30.2164442-06:00"
+},
+	"StringPartyid": {
+	    "ApiVersionNumber": "2.0.1.0",
+	    "ReferenceNumber": null,
+	    "Messages": [
+	        {
+	            "MessageCode": "40101",
+	            "MessageText": "Validation error.  PartyId={PartyId}",
+	            "MessageSeverity": "Error"
+	        }
+	    ],
+    "IsSuccess": false,
+    "Response": null,
+    "Timestamp": "2023-06-02T01:42:48.5206789-06:00"
+},
+"InvalidToken":
+{
+    
+}
+},
+"GetAccountPanDetails":
+{ "InvalidPanNumber":
+{
+    "ApiVersionNumber": "2.0.1.0",
+    "ReferenceNumber": null,
+    "Messages": [
+        {
+            "MessageCode": "20006",
+            "MessageText": "Not found GetAccountDetail_v4 PAN = {pan}",
+            "MessageSeverity": "Error"
+        }
+    ],
+    "IsSuccess": false,
+    "Response": null,
+    "Timestamp": "2023-06-08T17:41:43.9602728-06:00"
+},
+"InvalidResolution":
+{
+    "errors": {
+        "resolution": [
+            "The value 'a' is not valid."
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "|1eeafc6a-41653d072543bf48."
+}
+},
+"GetPanTransaction":{
+    "ApiVersionNumber": "2.0.1.0",
+    "ReferenceNumber": null,
+    "Messages": [],
+    "IsSuccess": true,
+    "Response": {
+        "RangeStart": null,
+        "RangeEnd": null,
+        "Accounts": []
+    },
+    "Timestamp": "2023-06-08T17:25:21.2545156-06:00"
+}
+}

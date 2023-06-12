@@ -1,0 +1,5615 @@
+ {
+ 	"Branch_By_ID":{
+    "Messages": [],
+    "ApiVersionNumber": "1.3.0.0",
+    "IsSuccess": true,
+    "Response": {
+        "Region": "Northeast",
+        "BranchNumber": 205,
+        "BranchName": "Atrium Centre",
+        "BranchAddress": "5012 49 Street",
+        "City": "Lloydminster",
+        "TransitNumber": "10199-899",
+        "CommunityCityName": "Lloydminster",
+        "LocationType": {
+            "LocationTypeId": 1,
+            "LocationTypeName": "Branch"
+        },
+        "BranchId": 1,
+        "RegionId": 1,
+        "Bin": 603164,
+        "BranchManager": "Tara Ferguson",
+        "MailingAddress": "5012 49 ST",
+        "PostalCode": "T9V 0K2",
+        "Latitude": "53.282527",
+        "Longitude": "-110.0058147",
+        "Notes": null,
+        "IsActive": true,
+        "BranchServices": [
+            {
+                "ServiceId": 214,
+                "ParentId": 1,
+                "ServiceTypeId": 7,
+                "ServiceValue": true,
+                "ServiceTypeCode": "Chequesource",
+                "ServiceTypeTitle": "Cheque Source",
+                "ServiceTypeDesc": "Has Cheque Source?"
+            },
+            {
+                "ServiceId": 733,
+                "ParentId": 1,
+                "ServiceTypeId": 5,
+                "ServiceValue": true,
+                "ServiceTypeCode": "CommercialServices",
+                "ServiceTypeTitle": "Commercial Services",
+                "ServiceTypeDesc": "Has Commercial Service?"
+            },
+            {
+                "ServiceId": 596,
+                "ParentId": 1,
+                "ServiceTypeId": 6,
+                "ServiceValue": true,
+                "ServiceTypeCode": "FinancialPlanning",
+                "ServiceTypeTitle": "Financial Planning",
+                "ServiceTypeDesc": "Has Financial Planning?"
+            },
+            {
+                "ServiceId": 454,
+                "ParentId": 1,
+                "ServiceTypeId": 4,
+                "ServiceValue": true,
+                "ServiceTypeCode": "InsuranceOffice",
+                "ServiceTypeTitle": "Insurance Office",
+                "ServiceTypeDesc": "Has Insurance Office?"
+            },
+            {
+                "ServiceId": 48,
+                "ParentId": 1,
+                "ServiceTypeId": 2,
+                "ServiceValue": true,
+                "ServiceTypeCode": "VideoConference",
+                "ServiceTypeTitle": "Video Conference",
+                "ServiceTypeDesc": "Has Video Conference?"
+            },
+            {
+                "ServiceId": 851,
+                "ParentId": 1,
+                "ServiceTypeId": 3,
+                "ServiceValue": true,
+                "ServiceTypeCode": "WealthManagement",
+                "ServiceTypeTitle": "Wealth Management",
+                "ServiceTypeDesc": "Has Wealth Management?"
+            },
+            {
+                "ServiceId": 649,
+                "ParentId": 1,
+                "ServiceTypeId": 1,
+                "ServiceValue": true,
+                "ServiceTypeCode": "WheelChairAccess",
+                "ServiceTypeTitle": "WheelChair Access",
+                "ServiceTypeDesc": "Has WheelChair Access?"
+            }
+        ],
+        "ATMs": [
+            {
+                "CityName": "Lloydminster",
+                "CityId": 40,
+                "ATMMakeId": 2,
+                "LockMakeId": 2,
+                "AlarmVendorId": 1,
+                "BranchId": 1,
+                "AlarmVendor": {
+                    "AlarmVendorId": 1,
+                    "VendorName": "Tyco"
+                },
+                "ATMMake": {
+                    "ATMMakeId": 2,
+                    "MakeBrand": "NCR"
+                },
+                "LockMake": {
+                    "LockMakeId": 2,
+                    "LockBrand": "S & G"
+                },
+                "Branch": null,
+                "ATMHours": [
+                    {
+                        "HourId": 933,
+                        "ParentId": 1,
+                        "DayOfWeek": null,
+                        "OpenTime": "08:00:00",
+                        "CloseTime": "20:00:00",
+                        "Comments": null,
+                        "IsClosed": false
+                    },
+                    {
+                        "HourId": 934,
+                        "ParentId": 1,
+                        "DayOfWeek": null,
+                        "OpenTime": "08:00:00",
+                        "CloseTime": "20:00:00",
+                        "Comments": null,
+                        "IsClosed": false
+                    },
+                    {
+                        "HourId": 935,
+                        "ParentId": 1,
+                        "DayOfWeek": null,
+                        "OpenTime": "08:00:00",
+                        "CloseTime": "20:00:00",
+                        "Comments": null,
+                        "IsClosed": false
+                    },
+                    {
+                        "HourId": 936,
+                        "ParentId": 1,
+                        "DayOfWeek": null,
+                        "OpenTime": "08:00:00",
+                        "CloseTime": "20:00:00",
+                        "Comments": null,
+                        "IsClosed": false
+                    },
+                    {
+                        "HourId": 937,
+                        "ParentId": 1,
+                        "DayOfWeek": null,
+                        "OpenTime": "08:00:00",
+                        "CloseTime": "20:00:00",
+                        "Comments": null,
+                        "IsClosed": false
+                    },
+                    {
+                        "HourId": 938,
+                        "ParentId": 1,
+                        "DayOfWeek": null,
+                        "OpenTime": "10:00:00",
+                        "CloseTime": "17:00:00",
+                        "Comments": null,
+                        "IsClosed": false
+                    },
+                    {
+                        "HourId": 939,
+                        "ParentId": 1,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    }
+                ],
+                "ATMServices": [
+                    {
+                        "ServiceId": 4,
+                        "ParentId": 1,
+                        "ServiceTypeId": 11,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "24Hours",
+                        "ServiceTypeTitle": "24 Hours",
+                        "ServiceTypeDesc": "Is 24 Hours?"
+                    },
+                    {
+                        "ServiceId": 2,
+                        "ParentId": 1,
+                        "ServiceTypeId": 9,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "Camera",
+                        "ServiceTypeTitle": "Camera",
+                        "ServiceTypeDesc": "Has Camera?"
+                    },
+                    {
+                        "ServiceId": 5022,
+                        "ParentId": 1,
+                        "ServiceTypeId": 1012,
+                        "ServiceValue": true,
+                        "ServiceTypeCode": "DepositAutomation",
+                        "ServiceTypeTitle": "Deposit Automation",
+                        "ServiceTypeDesc": "Offers Deposit Automation?"
+                    },
+                    {
+                        "ServiceId": 1,
+                        "ParentId": 1,
+                        "ServiceTypeId": 8,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "DriveThru",
+                        "ServiceTypeTitle": "Drive Thru",
+                        "ServiceTypeDesc": "Has DriveThru?"
+                    },
+                    {
+                        "ServiceId": 3,
+                        "ParentId": 1,
+                        "ServiceTypeId": 10,
+                        "ServiceValue": true,
+                        "ServiceTypeCode": "FullService",
+                        "ServiceTypeTitle": "Full Service",
+                        "ServiceTypeDesc": "Is Full Service?"
+                    },
+                    {
+                        "ServiceId": 3022,
+                        "ParentId": 1,
+                        "ServiceTypeId": 12,
+                        "ServiceValue": true,
+                        "ServiceTypeCode": "USDCurrency",
+                        "ServiceTypeTitle": "USD Currency",
+                        "ServiceTypeDesc": "Offers USD Currency?"
+                    }
+                ],
+                "ATMId": 1,
+                "ATMNumber": "A001N865",
+                "ATMName": "Lloydminster - Atrium Centre",
+                "ModelNumber": "6634",
+                "SerialNumber": "30-43533940",
+                "LockSerial": "18174968",
+                "MainProvider": "NCR FLM",
+                "SoftwareVersion": "Canadian Standard Activate V2.0",
+                "ATMAddress": "5012 49 Street",
+                "Latitude": null,
+                "Longitude": null,
+                "IPAddress": "10.102.210.11",
+                "Gateway": "10.102.210.1",
+                "Subnet": "255.255.255.224",
+                "OriginalInstallDate": "December 31, 2010",
+                "EPPModelNumber": "5815 EPP",
+                "EPPCertificateNumber": "PCI 4-20264",
+                "EPPPartNumber": "009-0028973",
+                "EPPVersionNumber": "009-0028973",
+                "EPPInstallDate": null,
+                "ReplacementDate": null,
+                "IsAddressSameAsBranch": true,
+                "ATMImageName": null,
+                "Notes": "Branch loads cash and process deposits",
+                "InternalNotes": null,
+                "BranchName": null,
+                "IsActive": true,
+                "PostalCode": null,
+                "BranchCityId": 40,
+                "BranchAddress": "",
+                "Brinks": "Fort Knox",
+                "BalancedBy": "Adam Lamping",
+                "Cassette1": "10 CAD",
+                "Cassette2": "20 CAD",
+                "Cassette3": "50 CAD",
+                "Cassette4": "100 USD"
+            },
+            {
+                "CityName": "",
+                "CityId": null,
+                "ATMMakeId": null,
+                "LockMakeId": null,
+                "AlarmVendorId": null,
+                "BranchId": 1,
+                "AlarmVendor": null,
+                "ATMMake": null,
+                "LockMake": null,
+                "Branch": null,
+                "ATMHours": [
+                    {
+                        "HourId": 3464,
+                        "ParentId": 1310,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3465,
+                        "ParentId": 1310,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3466,
+                        "ParentId": 1310,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3467,
+                        "ParentId": 1310,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3468,
+                        "ParentId": 1310,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3469,
+                        "ParentId": 1310,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3470,
+                        "ParentId": 1310,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    }
+                ],
+                "ATMServices": [
+                    {
+                        "ServiceId": 3315,
+                        "ParentId": 1310,
+                        "ServiceTypeId": 11,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "24Hours",
+                        "ServiceTypeTitle": "24 Hours",
+                        "ServiceTypeDesc": "Is 24 Hours?"
+                    },
+                    {
+                        "ServiceId": 3316,
+                        "ParentId": 1310,
+                        "ServiceTypeId": 9,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "Camera",
+                        "ServiceTypeTitle": "Camera",
+                        "ServiceTypeDesc": "Has Camera?"
+                    },
+                    {
+                        "ServiceId": 5315,
+                        "ParentId": 1310,
+                        "ServiceTypeId": 1012,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "DepositAutomation",
+                        "ServiceTypeTitle": "Deposit Automation",
+                        "ServiceTypeDesc": "Offers Deposit Automation?"
+                    },
+                    {
+                        "ServiceId": 3317,
+                        "ParentId": 1310,
+                        "ServiceTypeId": 8,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "DriveThru",
+                        "ServiceTypeTitle": "Drive Thru",
+                        "ServiceTypeDesc": "Has DriveThru?"
+                    },
+                    {
+                        "ServiceId": 3318,
+                        "ParentId": 1310,
+                        "ServiceTypeId": 10,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "FullService",
+                        "ServiceTypeTitle": "Full Service",
+                        "ServiceTypeDesc": "Is Full Service?"
+                    },
+                    {
+                        "ServiceId": 3319,
+                        "ParentId": 1310,
+                        "ServiceTypeId": 12,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "USDCurrency",
+                        "ServiceTypeTitle": "USD Currency",
+                        "ServiceTypeDesc": "Offers USD Currency?"
+                    }
+                ],
+                "ATMId": 1310,
+                "ATMNumber": "1234",
+                "ATMName": "south",
+                "ModelNumber": null,
+                "SerialNumber": null,
+                "LockSerial": null,
+                "MainProvider": null,
+                "SoftwareVersion": null,
+                "ATMAddress": null,
+                "Latitude": null,
+                "Longitude": null,
+                "IPAddress": null,
+                "Gateway": null,
+                "Subnet": null,
+                "OriginalInstallDate": null,
+                "EPPModelNumber": null,
+                "EPPCertificateNumber": null,
+                "EPPPartNumber": null,
+                "EPPVersionNumber": null,
+                "EPPInstallDate": null,
+                "ReplacementDate": null,
+                "IsAddressSameAsBranch": false,
+                "ATMImageName": null,
+                "Notes": null,
+                "InternalNotes": null,
+                "BranchName": null,
+                "IsActive": true,
+                "PostalCode": null,
+                "BranchCityId": 40,
+                "BranchAddress": "",
+                "Brinks": "2234 john",
+                "BalancedBy": "john",
+                "Cassette1": null,
+                "Cassette2": null,
+                "Cassette3": null,
+                "Cassette4": null
+            },
+            {
+                "CityName": "",
+                "CityId": null,
+                "ATMMakeId": 1,
+                "LockMakeId": 2,
+                "AlarmVendorId": null,
+                "BranchId": 1,
+                "AlarmVendor": null,
+                "ATMMake": {
+                    "ATMMakeId": 1,
+                    "MakeBrand": "Diebold"
+                },
+                "LockMake": {
+                    "LockMakeId": 2,
+                    "LockBrand": "S & G"
+                },
+                "Branch": null,
+                "ATMHours": [
+                    {
+                        "HourId": 3499,
+                        "ParentId": 1311,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3500,
+                        "ParentId": 1311,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3501,
+                        "ParentId": 1311,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3502,
+                        "ParentId": 1311,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3503,
+                        "ParentId": 1311,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3504,
+                        "ParentId": 1311,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    },
+                    {
+                        "HourId": 3505,
+                        "ParentId": 1311,
+                        "DayOfWeek": null,
+                        "OpenTime": null,
+                        "CloseTime": null,
+                        "Comments": null,
+                        "IsClosed": true
+                    }
+                ],
+                "ATMServices": [
+                    {
+                        "ServiceId": 3324,
+                        "ParentId": 1311,
+                        "ServiceTypeId": 11,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "24Hours",
+                        "ServiceTypeTitle": "24 Hours",
+                        "ServiceTypeDesc": "Is 24 Hours?"
+                    },
+                    {
+                        "ServiceId": 3325,
+                        "ParentId": 1311,
+                        "ServiceTypeId": 9,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "Camera",
+                        "ServiceTypeTitle": "Camera",
+                        "ServiceTypeDesc": "Has Camera?"
+                    },
+                    {
+                        "ServiceId": 5316,
+                        "ParentId": 1311,
+                        "ServiceTypeId": 1012,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "DepositAutomation",
+                        "ServiceTypeTitle": "Deposit Automation",
+                        "ServiceTypeDesc": "Offers Deposit Automation?"
+                    },
+                    {
+                        "ServiceId": 3326,
+                        "ParentId": 1311,
+                        "ServiceTypeId": 8,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "DriveThru",
+                        "ServiceTypeTitle": "Drive Thru",
+                        "ServiceTypeDesc": "Has DriveThru?"
+                    },
+                    {
+                        "ServiceId": 3327,
+                        "ParentId": 1311,
+                        "ServiceTypeId": 10,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "FullService",
+                        "ServiceTypeTitle": "Full Service",
+                        "ServiceTypeDesc": "Is Full Service?"
+                    },
+                    {
+                        "ServiceId": 3328,
+                        "ParentId": 1311,
+                        "ServiceTypeId": 12,
+                        "ServiceValue": false,
+                        "ServiceTypeCode": "USDCurrency",
+                        "ServiceTypeTitle": "USD Currency",
+                        "ServiceTypeDesc": "Offers USD Currency?"
+                    }
+                ],
+                "ATMId": 1311,
+                "ATMNumber": "44556677",
+                "ATMName": "SouthWest",
+                "ModelNumber": null,
+                "SerialNumber": null,
+                "LockSerial": null,
+                "MainProvider": null,
+                "SoftwareVersion": null,
+                "ATMAddress": null,
+                "Latitude": null,
+                "Longitude": null,
+                "IPAddress": null,
+                "Gateway": null,
+                "Subnet": null,
+                "OriginalInstallDate": null,
+                "EPPModelNumber": null,
+                "EPPCertificateNumber": null,
+                "EPPPartNumber": null,
+                "EPPVersionNumber": null,
+                "EPPInstallDate": null,
+                "ReplacementDate": null,
+                "IsAddressSameAsBranch": false,
+                "ATMImageName": null,
+                "Notes": null,
+                "InternalNotes": null,
+                "BranchName": null,
+                "IsActive": true,
+                "PostalCode": null,
+                "BranchCityId": 40,
+                "BranchAddress": "",
+                "Brinks": "Jar5566",
+                "BalancedBy": "Jamal",
+                "Cassette1": null,
+                "Cassette2": null,
+                "Cassette3": null,
+                "Cassette4": null
+            }
+        ],
+        "BranchHours": [
+            {
+                "HourId": 1,
+                "ParentId": 1,
+                "DayOfWeek": "Monday",
+                "OpenTime": "09:30:00",
+                "CloseTime": "17:00:00",
+                "Comments": null,
+                "IsClosed": false
+            },
+            {
+                "HourId": 2,
+                "ParentId": 1,
+                "DayOfWeek": "Tuesday",
+                "OpenTime": "09:30:00",
+                "CloseTime": "17:00:00",
+                "Comments": null,
+                "IsClosed": false
+            },
+            {
+                "HourId": 3,
+                "ParentId": 1,
+                "DayOfWeek": "Wednesday",
+                "OpenTime": "09:30:00",
+                "CloseTime": "17:00:00",
+                "Comments": null,
+                "IsClosed": false
+            },
+            {
+                "HourId": 4,
+                "ParentId": 1,
+                "DayOfWeek": "Thursday",
+                "OpenTime": "09:30:00",
+                "CloseTime": "17:00:00",
+                "Comments": null,
+                "IsClosed": false
+            },
+            {
+                "HourId": 5,
+                "ParentId": 1,
+                "DayOfWeek": "Friday",
+                "OpenTime": "09:30:00",
+                "CloseTime": "17:00:00",
+                "Comments": null,
+                "IsClosed": false
+            },
+            {
+                "HourId": 6,
+                "ParentId": 1,
+                "DayOfWeek": "Saturday",
+                "OpenTime": null,
+                "CloseTime": null,
+                "Comments": null,
+                "IsClosed": true
+            },
+            {
+                "HourId": 7,
+                "ParentId": 1,
+                "DayOfWeek": "Sunday",
+                "OpenTime": null,
+                "CloseTime": null,
+                "Comments": null,
+                "IsClosed": true
+            }
+        ],
+        "ContactInfo": [
+            {
+                "ContactInfoId": 1,
+                "BranchId": 1,
+                "ContactInfoValue": "780.875.4434",
+                "ContactDescription": null,
+                "ContactInfoTypeId": 0,
+                "ContactInfoType": {
+                    "ContactInfoTypeId": 1,
+                    "ContactInfoTypeDesc": "Main Phone"
+                }
+            },
+            {
+                "ContactInfoId": 104,
+                "BranchId": 1,
+                "ContactInfoValue": "780.808.4777",
+                "ContactDescription": null,
+                "ContactInfoTypeId": 0,
+                "ContactInfoType": {
+                    "ContactInfoTypeId": 3,
+                    "ContactInfoTypeDesc": "Main Fax"
+                }
+            },
+            {
+                "ContactInfoId": 222,
+                "BranchId": 1,
+                "ContactInfoValue": "877.606.6333",
+                "ContactDescription": null,
+                "ContactInfoTypeId": 0,
+                "ContactInfoType": {
+                    "ContactInfoTypeId": 2,
+                    "ContactInfoTypeDesc": "Other Phone"
+                }
+            },
+            {
+                "ContactInfoId": 223,
+                "BranchId": 1,
+                "ContactInfoValue": "4999",
+                "ContactDescription": "Access Code - Legacy CWCU",
+                "ContactInfoTypeId": 0,
+                "ContactInfoType": {
+                    "ContactInfoTypeId": 2,
+                    "ContactInfoTypeDesc": "Other Phone"
+                }
+            },
+            {
+                "ContactInfoId": 299,
+                "BranchId": 1,
+                "ContactInfoValue": "AtriumCenterBranchManagement@servus.ca",
+                "ContactDescription": null,
+                "ContactInfoTypeId": 0,
+                "ContactInfoType": {
+                    "ContactInfoTypeId": 5,
+                    "ContactInfoTypeDesc": "Main Email"
+                }
+            },
+            {
+                "ContactInfoId": 423,
+                "BranchId": 1,
+                "ContactInfoValue": "780.808.4745",
+                "ContactDescription": null,
+                "ContactInfoTypeId": 0,
+                "ContactInfoType": {
+                    "ContactInfoTypeId": 7,
+                    "ContactInfoTypeDesc": "Direct Line"
+                }
+            },
+            {
+                "ContactInfoId": 2608,
+                "BranchId": 1,
+                "ContactInfoValue": "https://branchdirectory.preprod.prv/Admin/EditBranch/1",
+                "ContactDescription": "Test case ",
+                "ContactInfoTypeId": 0,
+                "ContactInfoType": {
+                    "ContactInfoTypeId": 8,
+                    "ContactInfoTypeDesc": "Appointment Booking - Retail"
+                }
+            }
+        ],
+        "CostCentreNumber": 8205,
+        "LocationTypeId": 1
+    }
+}
+ 	,
+	"List_Branches": {
+  "Total": "2",
+  "Messages": [
+  ],
+  "ApiVersionNumber": "1.3.0.0",
+  "IsSuccess": true,
+  "Response": [
+    {
+      "Region": "Northeasts",
+      "BranchNumber": 205,
+      "BranchName": "Atrium Centre",
+      "BranchAddress": "5012 49 Street",
+      "City": "Lloydminster",
+      "TransitNumber": "10199-899",
+      "CommunityCityName": "Lloydminster",
+      "LocationType": {
+        "LocationTypeId": 1,
+        "LocationTypeName": "Branch"
+      },
+      "BranchId": 1,
+      "RegionId": 1,
+      "Bin": 603164,
+      "BranchManager": "Tara Ferguson",
+      "MailingAddress": "5012 49 ST",
+      "PostalCode": "T9V 0K2",
+      "Latitude": "53.282527",
+      "Longitude": "-110.0058147",
+      "Notes": null,
+      "IsActive": true,
+      "BranchServices": [
+        {
+          "ServiceId": 214,
+          "ParentId": 1,
+          "ServiceTypeId": 7,
+          "ServiceValue": true,
+          "ServiceTypeCode": "Chequesource",
+          "ServiceTypeTitle": "Cheque Source",
+          "ServiceTypeDesc": "Has Cheque Source?"
+        },
+        {
+          "ServiceId": 733,
+          "ParentId": 1,
+          "ServiceTypeId": 5,
+          "ServiceValue": true,
+          "ServiceTypeCode": "CommercialServices",
+          "ServiceTypeTitle": "Commercial Services",
+          "ServiceTypeDesc": "Has Commercial Service?"
+        },
+        {
+          "ServiceId": 596,
+          "ParentId": 1,
+          "ServiceTypeId": 6,
+          "ServiceValue": true,
+          "ServiceTypeCode": "FinancialPlanning",
+          "ServiceTypeTitle": "Financial Planning",
+          "ServiceTypeDesc": "Has Financial Planning?"
+        },
+        {
+          "ServiceId": 454,
+          "ParentId": 1,
+          "ServiceTypeId": 4,
+          "ServiceValue": true,
+          "ServiceTypeCode": "InsuranceOffice",
+          "ServiceTypeTitle": "Insurance Office",
+          "ServiceTypeDesc": "Has Insurance Office?"
+        },
+        {
+          "ServiceId": 48,
+          "ParentId": 1,
+          "ServiceTypeId": 2,
+          "ServiceValue": true,
+          "ServiceTypeCode": "VideoConference",
+          "ServiceTypeTitle": "Video Conference",
+          "ServiceTypeDesc": "Has Video Conference?"
+        },
+        {
+          "ServiceId": 851,
+          "ParentId": 1,
+          "ServiceTypeId": 3,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WealthManagement",
+          "ServiceTypeTitle": "Wealth Management",
+          "ServiceTypeDesc": "Has Wealth Management?"
+        },
+        {
+          "ServiceId": 649,
+          "ParentId": 1,
+          "ServiceTypeId": 1,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WheelChairAccess",
+          "ServiceTypeTitle": "WheelChair Access",
+          "ServiceTypeDesc": "Has WheelChair Access?"
+        }
+      ],
+      "ATMs": [
+        {
+          "ATMMake": {
+            "ATMMakeId": 2,
+            "MakeBrand": "NCR"
+          },
+          "LockMake": {
+            "LockMakeId": 2,
+            "LockBrand": "S & G"
+          },
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 933,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 934,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 935,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 936,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 937,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 938,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "10:00:00",
+              "CloseTime": "17:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 939,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 4,
+              "ParentId": 1,
+              "ServiceTypeId": 11,
+              "ServiceValue": false,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 2,
+              "ParentId": 1,
+              "ServiceTypeId": 9,
+              "ServiceValue": false,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 5022,
+              "ParentId": 1,
+              "ServiceTypeId": 1012,
+              "ServiceValue": true,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            },
+            {
+              "ServiceId": 1,
+              "ParentId": 1,
+              "ServiceTypeId": 8,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 3,
+              "ParentId": 1,
+              "ServiceTypeId": 10,
+              "ServiceValue": true,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 3022,
+              "ParentId": 1,
+              "ServiceTypeId": 12,
+              "ServiceValue": true,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            }
+          ],
+          "ATMId": 1,
+          "ATMNumber": "A001N865",
+          "ATMName": "Lloydminster - Atrium Centre",
+          "ModelNumber": "6634",
+          "Notes": "Branch loads cash and process deposits",
+          "Brinks": "Fort Knox",
+          "BalancedBy": "Adam Lamping",
+          "Cassette1": "10 CAD",
+          "Cassette2": "20 CAD",
+          "Cassette3": "50 CAD",
+          "Cassette4": "100 USD"
+        },
+        {
+          "ATMMake": null,
+          "LockMake": null,
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 3464,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3465,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3466,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3467,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3468,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3469,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3470,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 3315,
+              "ParentId": 1310,
+              "ServiceTypeId": 11,
+              "ServiceValue": false,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 3316,
+              "ParentId": 1310,
+              "ServiceTypeId": 9,
+              "ServiceValue": false,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 5315,
+              "ParentId": 1310,
+              "ServiceTypeId": 1012,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            },
+            {
+              "ServiceId": 3317,
+              "ParentId": 1310,
+              "ServiceTypeId": 8,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 3318,
+              "ParentId": 1310,
+              "ServiceTypeId": 10,
+              "ServiceValue": false,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 3319,
+              "ParentId": 1310,
+              "ServiceTypeId": 12,
+              "ServiceValue": false,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            }
+          ],
+          "ATMId": 1310,
+          "ATMNumber": "1234",
+          "ATMName": "south",
+          "ModelNumber": null,
+          "Notes": null,
+          "Brinks": "2234 john",
+          "BalancedBy": "john",
+          "Cassette1": null,
+          "Cassette2": null,
+          "Cassette3": null,
+          "Cassette4": null
+        },
+        {
+          "ATMMake": {
+            "ATMMakeId": 1,
+            "MakeBrand": "Diebold"
+          },
+          "LockMake": {
+            "LockMakeId": 2,
+            "LockBrand": "S & G"
+          },
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 3499,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3500,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3501,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3502,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3503,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3504,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3505,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 3324,
+              "ParentId": 1311,
+              "ServiceTypeId": 11,
+              "ServiceValue": false,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 3325,
+              "ParentId": 1311,
+              "ServiceTypeId": 9,
+              "ServiceValue": false,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 5316,
+              "ParentId": 1311,
+              "ServiceTypeId": 1012,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            },
+            {
+              "ServiceId": 3326,
+              "ParentId": 1311,
+              "ServiceTypeId": 8,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 3327,
+              "ParentId": 1311,
+              "ServiceTypeId": 10,
+              "ServiceValue": false,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 3328,
+              "ParentId": 1311,
+              "ServiceTypeId": 12,
+              "ServiceValue": false,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            }
+          ],
+          "ATMId": 1311,
+          "ATMNumber": "44556677",
+          "ATMName": "SouthWest",
+          "ModelNumber": null,
+          "Notes": null,
+          "Brinks": "Jar5566",
+          "BalancedBy": "Jamal",
+          "Cassette1": null,
+          "Cassette2": null,
+          "Cassette3": null,
+          "Cassette4": null
+        }
+      ],
+      "BranchHours": [
+        {
+          "HourId": 1,
+          "ParentId": 1,
+          "DayOfWeek": "Monday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 2,
+          "ParentId": 1,
+          "DayOfWeek": "Tuesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 3,
+          "ParentId": 1,
+          "DayOfWeek": "Wednesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 4,
+          "ParentId": 1,
+          "DayOfWeek": "Thursday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 5,
+          "ParentId": 1,
+          "DayOfWeek": "Friday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 6,
+          "ParentId": 1,
+          "DayOfWeek": "Saturday",
+          "OpenTime": null,
+          "CloseTime": null,
+          "Comments": null,
+          "IsClosed": true
+        },
+        {
+          "HourId": 7,
+          "ParentId": 1,
+          "DayOfWeek": "Sunday",
+          "OpenTime": null,
+          "CloseTime": null,
+          "Comments": null,
+          "IsClosed": true
+        }
+      ],
+      "ContactInfo": [
+        {
+          "ContactInfoId": 1,
+          "BranchId": 1,
+          "ContactInfoValue": "780.875.4434",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 1,
+            "ContactInfoTypeDesc": "Main Phone"
+          }
+        },
+        {
+          "ContactInfoId": 104,
+          "BranchId": 1,
+          "ContactInfoValue": "780.808.4777",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 3,
+            "ContactInfoTypeDesc": "Main Fax"
+          }
+        },
+        {
+          "ContactInfoId": 222,
+          "BranchId": 1,
+          "ContactInfoValue": "877.606.6333",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 2,
+            "ContactInfoTypeDesc": "Other Phone"
+          }
+        },
+        {
+          "ContactInfoId": 223,
+          "BranchId": 1,
+          "ContactInfoValue": "4999",
+          "ContactDescription": "Access Code - Legacy CWCU",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 2,
+            "ContactInfoTypeDesc": "Other Phone"
+          }
+        },
+        {
+          "ContactInfoId": 299,
+          "BranchId": 1,
+          "ContactInfoValue": "AtriumCenterBranchManagement@servus.ca",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 5,
+            "ContactInfoTypeDesc": "Main Email"
+          }
+        },
+        {
+          "ContactInfoId": 423,
+          "BranchId": 1,
+          "ContactInfoValue": "780.808.4745",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 7,
+            "ContactInfoTypeDesc": "Direct Line"
+          }
+        },
+        {
+          "ContactInfoId": 2608,
+          "BranchId": 1,
+          "ContactInfoValue": "https://branchdirectory.preprod.prv/Admin/EditBranch/1",
+          "ContactDescription": "Test case ",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 8,
+            "ContactInfoTypeDesc": "Appointment Booking - Retail"
+          }
+        }
+      ]
+    },
+    {
+      "Region": "Northeast",
+      "BranchNumber": 177,
+      "BranchName": "18th Street Crossing",
+      "BranchAddress": "5009 - 18 Street",
+      "City": "Lloydminster",
+      "TransitNumber": "60199-899",
+      "CommunityCityName": "Lloydminster",
+      "LocationType": {
+        "LocationTypeId": 1,
+        "LocationTypeName": "Branch"
+      },
+      "BranchId": 2,
+      "RegionId": 1,
+      "Bin": 603164,
+      "BranchManager": "Allysa Squire",
+      "MailingAddress": "5009 - 18 Street",
+      "PostalCode": "T9V 2G7",
+      "Latitude": "53.2536594",
+      "Longitude": "-110.0057391",
+      "Notes": null,
+      "IsActive": true,
+      "BranchServices": [
+        {
+          "ServiceId": 368,
+          "ParentId": 2,
+          "ServiceTypeId": 5,
+          "ServiceValue": false,
+          "ServiceTypeCode": "CommercialServices",
+          "ServiceTypeTitle": "Commercial Services",
+          "ServiceTypeDesc": "Has Commercial Service?"
+        },
+        {
+          "ServiceId": 455,
+          "ParentId": 2,
+          "ServiceTypeId": 1,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WheelChairAccess",
+          "ServiceTypeTitle": "WheelChair Access",
+          "ServiceTypeDesc": "Has WheelChair Access?"
+        },
+        {
+          "ServiceId": 621,
+          "ParentId": 2,
+          "ServiceTypeId": 3,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WealthManagement",
+          "ServiceTypeTitle": "Wealth Management",
+          "ServiceTypeDesc": "Has Wealth Management?"
+        },
+        {
+          "ServiceId": 635,
+          "ParentId": 2,
+          "ServiceTypeId": 2,
+          "ServiceValue": false,
+          "ServiceTypeCode": "VideoConference",
+          "ServiceTypeTitle": "Video Conference",
+          "ServiceTypeDesc": "Has Video Conference?"
+        },
+        {
+          "ServiceId": 702,
+          "ParentId": 2,
+          "ServiceTypeId": 6,
+          "ServiceValue": false,
+          "ServiceTypeCode": "FinancialPlanning",
+          "ServiceTypeTitle": "Financial Planning",
+          "ServiceTypeDesc": "Has Financial Planning?"
+        },
+        {
+          "ServiceId": 828,
+          "ParentId": 2,
+          "ServiceTypeId": 4,
+          "ServiceValue": false,
+          "ServiceTypeCode": "InsuranceOffice",
+          "ServiceTypeTitle": "Insurance Office",
+          "ServiceTypeDesc": "Has Insurance Office?"
+        },
+        {
+          "ServiceId": 888,
+          "ParentId": 2,
+          "ServiceTypeId": 7,
+          "ServiceValue": true,
+          "ServiceTypeCode": "Chequesource",
+          "ServiceTypeTitle": "Cheque Source",
+          "ServiceTypeDesc": "Has Cheque Source?"
+        }
+      ],
+      "ATMs": [
+        {
+          "ATMMake": {
+            "ATMMakeId": 2,
+            "MakeBrand": "NCR"
+          },
+          "LockMake": {
+            "LockMakeId": 2,
+            "LockBrand": "S & G"
+          },
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 1471,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1472,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1473,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1474,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1475,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1476,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1477,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 5,
+              "ParentId": 2,
+              "ServiceTypeId": 8,
+              "ServiceValue": true,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 6,
+              "ParentId": 2,
+              "ServiceTypeId": 9,
+              "ServiceValue": true,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 7,
+              "ParentId": 2,
+              "ServiceTypeId": 10,
+              "ServiceValue": true,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 8,
+              "ParentId": 2,
+              "ServiceTypeId": 11,
+              "ServiceValue": true,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 3023,
+              "ParentId": 2,
+              "ServiceTypeId": 12,
+              "ServiceValue": true,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            },
+            {
+              "ServiceId": 5023,
+              "ParentId": 2,
+              "ServiceTypeId": 1012,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            }
+          ],
+          "ATMId": 2,
+          "ATMNumber": "A001N746",
+          "ATMName": "Lloydminster - 18th Street Crossing",
+          "ModelNumber": "6634",
+          "Notes": "\r\nBranch loads cash and process deposits",
+          "Brinks": "Branch",
+          "BalancedBy": "Rabia Pervaiz 08 Dec 2022",
+          "Cassette1": null,
+          "Cassette2": null,
+          "Cassette3": null,
+          "Cassette4": null
+        }
+      ],
+      "BranchHours": [
+        {
+          "HourId": 8,
+          "ParentId": 2,
+          "DayOfWeek": "Monday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 9,
+          "ParentId": 2,
+          "DayOfWeek": "Tuesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 10,
+          "ParentId": 2,
+          "DayOfWeek": "Wednesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 11,
+          "ParentId": 2,
+          "DayOfWeek": "Thursday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 12,
+          "ParentId": 2,
+          "DayOfWeek": "Friday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "18:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 13,
+          "ParentId": 2,
+          "DayOfWeek": "Saturday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "15:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 14,
+          "ParentId": 2,
+          "DayOfWeek": "Sunday",
+          "OpenTime": null,
+          "CloseTime": null,
+          "Comments": null,
+          "IsClosed": true
+        }
+      ],
+      "ContactInfo": [
+        {
+          "ContactInfoId": 2,
+          "BranchId": 2,
+          "ContactInfoValue": "780-875-4434",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 1,
+            "ContactInfoTypeDesc": "Main Phone"
+          }
+        },
+        {
+          "ContactInfoId": 105,
+          "BranchId": 2,
+          "ContactInfoValue": "780-874-4222",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 3,
+            "ContactInfoTypeDesc": "Main Fax"
+          }
+        },
+        {
+          "ContactInfoId": 296,
+          "BranchId": 2,
+          "ContactInfoValue": "18thStreetCrossingBranch@servus.ca",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 5,
+            "ContactInfoTypeDesc": "Main Email"
+          }
+        },
+        {
+          "ContactInfoId": 424,
+          "BranchId": 2,
+          "ContactInfoValue": "780-874-4210",
+          "ContactDescription": "ext 44210",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 7,
+            "ContactInfoTypeDesc": "Direct Line"
+          }
+        },
+        {
+          "ContactInfoId": 2609,
+          "BranchId": 2,
+          "ContactInfoValue": "https://branchdirectory.preprod.prv/Admin/EditBranch/2",
+          "ContactDescription": "Chrome  ",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 8,
+            "ContactInfoTypeDesc": "Appointment Booking - Retail"
+          }
+        }
+      ]
+    }
+  ]
+},
+"Search_Branch_ATM": {
+    "SortField": null,
+    "SortOrder": "asc",
+    "Page": 0,
+    "Row": 0,
+    "Total": 2,
+    "Messages": [],
+    "ApiVersionNumber": "1.3.0.0",
+    "IsSuccess": true,
+    "Response": [
+        {
+            "Id": 1,
+            "Number": "205",
+            "Name": "Atrium Centre",
+            "Address": "5012 49 Street",
+            "CityName": "Lloydminster",
+            "Latitude": "53.282527",
+            "Longitude": "-110.0058147",
+            "IsActive": true,
+            "Type": 0
+        },
+        {
+            "Id": 1,
+            "Number": "A001N865",
+            "Name": "Lloydminster - Atrium Centre",
+            "Address": "5012 49 Street",
+            "CityName": "Lloydminster",
+            "Latitude": null,
+            "Longitude": null,
+            "IsActive": true,
+            "Type": 1
+        }
+    ]
+},
+"List_ATM": {
+    "SortField": null,
+    "SortOrder": "asc",
+    "Page": 0,
+    "Row": 0,
+    "Total": 20,
+    "Messages": [],
+    "ApiVersionNumber": "1.3.0.0",
+    "IsSuccess": true,
+    "Response": [
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 3,
+            "LockMakeId": 3,
+            "AlarmVendorId": 1,
+            "BranchId": 70,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 3,
+                "MakeBrand": "Unknown"
+            },
+            "LockMake": {
+                "LockMakeId": 3,
+                "LockBrand": "Unknown"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3088,
+                    "ParentId": 76,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5088,
+                    "ParentId": 76,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 76,
+            "ATMNumber": null,
+            "ATMName": "Hillhurst Place",
+            "ModelNumber": null,
+            "SerialNumber": null,
+            "LockSerial": null,
+            "MainProvider": null,
+            "SoftwareVersion": null,
+            "ATMAddress": "420, 301-14 St NW",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": null,
+            "Gateway": null,
+            "Subnet": null,
+            "OriginalInstallDate": null,
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Hillhurst Place",
+            "IsActive": false,
+            "PostalCode": "",
+            "BranchCityId": 10,
+            "BranchAddress": "420, 301-14 St NW",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 2,
+            "LockMakeId": 2,
+            "AlarmVendorId": 2,
+            "BranchId": null,
+            "AlarmVendor": {
+                "AlarmVendorId": 2,
+                "VendorName": "Chubb"
+            },
+            "ATMMake": {
+                "ATMMakeId": 2,
+                "MakeBrand": "NCR"
+            },
+            "LockMake": {
+                "LockMakeId": 2,
+                "LockBrand": "S & G"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 5464,
+                    "ParentId": 2309,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 5465,
+                    "ParentId": 2309,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 5466,
+                    "ParentId": 2309,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 5467,
+                    "ParentId": 2309,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 5468,
+                    "ParentId": 2309,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 5469,
+                    "ParentId": 2309,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 5470,
+                    "ParentId": 2309,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 6022,
+                    "ParentId": 2309,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 6023,
+                    "ParentId": 2309,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 6024,
+                    "ParentId": 2309,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                },
+                {
+                    "ServiceId": 6025,
+                    "ParentId": 2309,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 6026,
+                    "ParentId": 2309,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 6027,
+                    "ParentId": 2309,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                }
+            ],
+            "ATMId": 2309,
+            "ATMNumber": "19880419",
+            "ATMName": "KARTHIK TEST ATM APR 11",
+            "ModelNumber": "ap123658",
+            "SerialNumber": "30-43533967",
+            "LockSerial": "30025811",
+            "MainProvider": "test",
+            "SoftwareVersion": "65464",
+            "ATMAddress": "9000 test ave sw",
+            "Latitude": "0.42323",
+            "Longitude": "-0.12378",
+            "IPAddress": "10.36.32.87",
+            "Gateway": "544",
+            "Subnet": "255",
+            "OriginalInstallDate": "February 19, 2020",
+            "EPPModelNumber": "PCI 4-20209",
+            "EPPCertificateNumber": "009-0028944",
+            "EPPPartNumber": "5465465",
+            "EPPVersionNumber": "5678452",
+            "EPPInstallDate": "2023-03-29T00:00:00",
+            "ReplacementDate": "2023-03-08T00:00:00",
+            "IsAddressSameAsBranch": false,
+            "ATMImageName": null,
+            "Notes": "test ATM notes ",
+            "InternalNotes": "test  internal ATM notes ",
+            "BranchName": null,
+            "IsActive": true,
+            "PostalCode": "T5K 0E7",
+            "BranchCityId": null,
+            "BranchAddress": "",
+            "Brinks": "test APR 13",
+            "BalancedBy": "SDFSDFDSFAS",
+            "Cassette1": "768SDF4878",
+            "Cassette2": "JGHJGJHJHG",
+            "Cassette3": "!@$@$@%$!@",
+            "Cassette4": "SDFSDAFSDA"
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 180,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 1492,
+                    "ParentId": 311,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1493,
+                    "ParentId": 311,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1494,
+                    "ParentId": 311,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1495,
+                    "ParentId": 311,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1496,
+                    "ParentId": 311,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1497,
+                    "ParentId": 311,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1498,
+                    "ParentId": 311,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 1030,
+                    "ParentId": 311,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 1031,
+                    "ParentId": 311,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 1032,
+                    "ParentId": 311,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 1033,
+                    "ParentId": 311,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 3314,
+                    "ParentId": 311,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5314,
+                    "ParentId": 311,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 311,
+            "ATMNumber": "888",
+            "ATMName": "Calgary - Mac Town 2",
+            "ModelNumber": null,
+            "SerialNumber": null,
+            "LockSerial": null,
+            "MainProvider": null,
+            "SoftwareVersion": null,
+            "ATMAddress": "#150-142 McKenzie Towne Link Southeast",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": null,
+            "Gateway": null,
+            "Subnet": null,
+            "OriginalInstallDate": null,
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "McKenzie Towne",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "#150-142 McKenzie Towne Link Southeast",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 2,
+            "BranchId": null,
+            "AlarmVendor": {
+                "AlarmVendorId": 2,
+                "VendorName": "Chubb"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3304,
+                    "ParentId": 301,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5304,
+                    "ParentId": 301,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 301,
+            "ATMNumber": "A001D438",
+            "ATMName": "Exterior Walk Up",
+            "ModelNumber": "7750",
+            "SerialNumber": "7750WUS00529",
+            "LockSerial": "1602948",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "706 17 Avenue SW",
+            "Latitude": "51.067897",
+            "Longitude": "-114.070248",
+            "IPAddress": "10.101.233.11",
+            "Gateway": "10.101.233.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "November 25, 2021",
+            "EPPModelNumber": "EPP7.5",
+            "EPPCertificateNumber": "4-20346",
+            "EPPPartNumber": "01750339573",
+            "EPPVersionNumber": "5.x",
+            "EPPInstallDate": "2021-11-25T00:00:00",
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": false,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": null,
+            "IsActive": false,
+            "PostalCode": "T2S 0B7",
+            "BranchCityId": null,
+            "BranchAddress": "",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 2,
+            "BranchId": 165,
+            "AlarmVendor": {
+                "AlarmVendorId": 2,
+                "VendorName": "Chubb"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 4814,
+                    "ParentId": 305,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4815,
+                    "ParentId": 305,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4816,
+                    "ParentId": 305,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4817,
+                    "ParentId": 305,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4818,
+                    "ParentId": 305,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4819,
+                    "ParentId": 305,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4820,
+                    "ParentId": 305,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 617,
+                    "ParentId": 305,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 618,
+                    "ParentId": 305,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 619,
+                    "ParentId": 305,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 620,
+                    "ParentId": 305,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3308,
+                    "ParentId": 305,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5308,
+                    "ParentId": 305,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 305,
+            "ATMNumber": "A001D438",
+            "ATMName": "Calgary - Mount Royal",
+            "ModelNumber": "7750",
+            "SerialNumber": "7750WUS00529",
+            "LockSerial": "1602948",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "706 17 Avenue Southwest",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.101.233.11",
+            "Gateway": "10.101.233.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "November 25, 2021",
+            "EPPModelNumber": "EPP7.5",
+            "EPPCertificateNumber": "4-20346",
+            "EPPPartNumber": "01750339573",
+            "EPPVersionNumber": "5.x",
+            "EPPInstallDate": "2021-11-25T00:00:00",
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Mount Royal",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "706 17 Avenue Southwest",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 2,
+            "BranchId": 180,
+            "AlarmVendor": {
+                "AlarmVendorId": 2,
+                "VendorName": "Chubb"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 1499,
+                    "ParentId": 186,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1500,
+                    "ParentId": 186,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1501,
+                    "ParentId": 186,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1502,
+                    "ParentId": 186,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1503,
+                    "ParentId": 186,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1504,
+                    "ParentId": 186,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1505,
+                    "ParentId": 186,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 209,
+                    "ParentId": 186,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 210,
+                    "ParentId": 186,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 211,
+                    "ParentId": 186,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 212,
+                    "ParentId": 186,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3189,
+                    "ParentId": 186,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5189,
+                    "ParentId": 186,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 186,
+            "ATMNumber": "A001D444",
+            "ATMName": "Calgary - McKenzie Towne",
+            "ModelNumber": "740",
+            "SerialNumber": "1740RGR09014",
+            "LockSerial": "083482",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "#150-142 McKenzie Towne Link Southeast",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.101.33.11",
+            "Gateway": "10.101.33.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "September 18, 2012",
+            "EPPModelNumber": "EPP 7",
+            "EPPCertificateNumber": "PCI 4-20269",
+            "EPPPartNumber": "49249441723B",
+            "EPPVersionNumber": "414-2020 R1X",
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "McKenzie Towne",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "#150-142 McKenzie Towne Link Southeast",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 2,
+            "BranchId": 180,
+            "AlarmVendor": {
+                "AlarmVendorId": 2,
+                "VendorName": "Chubb"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 1506,
+                    "ParentId": 187,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1507,
+                    "ParentId": 187,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1508,
+                    "ParentId": 187,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1509,
+                    "ParentId": 187,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1510,
+                    "ParentId": 187,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1511,
+                    "ParentId": 187,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1512,
+                    "ParentId": 187,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 213,
+                    "ParentId": 187,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 214,
+                    "ParentId": 187,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 215,
+                    "ParentId": 187,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 216,
+                    "ParentId": 187,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3190,
+                    "ParentId": 187,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5190,
+                    "ParentId": 187,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 187,
+            "ATMNumber": "A001D445",
+            "ATMName": "Calgary - McKenzie Towne",
+            "ModelNumber": "760",
+            "SerialNumber": "1760RGR06682",
+            "LockSerial": "083449",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "#150-142 McKenzie Towne Link Southeast",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.101.33.12",
+            "Gateway": "10.101.33.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "September 18, 2012",
+            "EPPModelNumber": "EPP 7",
+            "EPPCertificateNumber": "PCI 4-20269",
+            "EPPPartNumber": "49249441723B",
+            "EPPVersionNumber": "414-2020 R1X",
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "McKenzie Towne",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "#150-142 McKenzie Towne Link Southeast",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 25,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3046,
+                    "ParentId": 30,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5046,
+                    "ParentId": 30,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 30,
+            "ATMNumber": "A001D717",
+            "ATMName": "Calgary - Blackfoot",
+            "ModelNumber": "Opteva 720",
+            "SerialNumber": "1720V3302641",
+            "LockSerial": "614781",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": null,
+            "ATMAddress": "3345 - 8 Street SE",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.221.21.163",
+            "Gateway": null,
+            "Subnet": null,
+            "OriginalInstallDate": "March 7, 2008",
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": "ATM is NOT 24 Hrs. Diebold does not have after-hours access.\r\nMonday- Friday 7 30am- 6pm\r\nClosed Saturday and Sundays",
+            "InternalNotes": null,
+            "BranchName": "Blackfoot",
+            "IsActive": false,
+            "PostalCode": "",
+            "BranchCityId": 10,
+            "BranchAddress": "3345 - 8 Street SE",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 198,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 4842,
+                    "ParentId": 298,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4843,
+                    "ParentId": 298,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4844,
+                    "ParentId": 298,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4845,
+                    "ParentId": 298,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4846,
+                    "ParentId": 298,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4847,
+                    "ParentId": 298,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4848,
+                    "ParentId": 298,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 3301,
+                    "ParentId": 298,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 4106,
+                    "ParentId": 298,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 4107,
+                    "ParentId": 298,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 4108,
+                    "ParentId": 298,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 4109,
+                    "ParentId": 298,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 5301,
+                    "ParentId": 298,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 298,
+            "ATMNumber": "A001D767",
+            "ATMName": "Legacy",
+            "ModelNumber": "7750",
+            "SerialNumber": "7750VUS00389",
+            "LockSerial": "1356109",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista",
+            "ATMAddress": "130, 20 Longview Common SE",
+            "Latitude": "50.864220",
+            "Longitude": "-114.029700",
+            "IPAddress": "10.102.73.11",
+            "Gateway": "10.102.73.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "April 07, 2021",
+            "EPPModelNumber": "EPP V7",
+            "EPPCertificateNumber": "4-20341",
+            "EPPPartNumber": "48007475",
+            "EPPVersionNumber": null,
+            "EPPInstallDate": "2021-04-07T00:00:00",
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Legacy",
+            "IsActive": false,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "130, 20 Longview Common SE",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 198,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 4849,
+                    "ParentId": 304,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4850,
+                    "ParentId": 304,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4851,
+                    "ParentId": 304,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4852,
+                    "ParentId": 304,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4853,
+                    "ParentId": 304,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4854,
+                    "ParentId": 304,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4855,
+                    "ParentId": 304,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 613,
+                    "ParentId": 304,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 614,
+                    "ParentId": 304,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 615,
+                    "ParentId": 304,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 616,
+                    "ParentId": 304,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3307,
+                    "ParentId": 304,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5307,
+                    "ParentId": 304,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 304,
+            "ATMNumber": "A001D767",
+            "ATMName": "Calgary - Legacy",
+            "ModelNumber": "7750",
+            "SerialNumber": "77520VUS00389",
+            "LockSerial": "1356109",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista",
+            "ATMAddress": "130, 20 Longview Common SE",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.102.73.11",
+            "Gateway": "10.102.73.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "April 07, 2021",
+            "EPPModelNumber": "EPP V7",
+            "EPPCertificateNumber": "4-20341",
+            "EPPPartNumber": "48007475",
+            "EPPVersionNumber": null,
+            "EPPInstallDate": "2021-04-28T00:00:00",
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Legacy",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "130, 20 Longview Common SE",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 197,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 1059,
+                    "ParentId": 297,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1060,
+                    "ParentId": 297,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1061,
+                    "ParentId": 297,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1062,
+                    "ParentId": 297,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1063,
+                    "ParentId": 297,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1064,
+                    "ParentId": 297,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 1065,
+                    "ParentId": 297,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 593,
+                    "ParentId": 297,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 594,
+                    "ParentId": 297,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 595,
+                    "ParentId": 297,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 596,
+                    "ParentId": 297,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3300,
+                    "ParentId": 297,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5300,
+                    "ParentId": 297,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 297,
+            "ATMNumber": "A001D793",
+            "ATMName": "Calgary - Savanna",
+            "ModelNumber": "7750",
+            "SerialNumber": "7750WUS00285",
+            "LockSerial": "1507753",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "6110-5850 88 AVE Northeast",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.102.65.11",
+            "Gateway": "10.102.65.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "December 03, 2020",
+            "EPPModelNumber": "EPP7",
+            "EPPCertificateNumber": "PCI 4-20269",
+            "EPPPartNumber": "49249441723B",
+            "EPPVersionNumber": "414-2020 R1X",
+            "EPPInstallDate": "2020-12-03T00:00:00",
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": "-Exterior walk up\r\n-English, French, and Punjabi languages\r\n-Dispenses 5's, 20's, and 50's",
+            "BranchName": "Savanna",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "6110-5850 88 AVE Northeast",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 102,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3152,
+                    "ParentId": 144,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5152,
+                    "ParentId": 144,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 144,
+            "ATMNumber": "A001D889",
+            "ATMName": "Calgary - Foothills",
+            "ModelNumber": "Opteva 740",
+            "SerialNumber": "1740R3310132",
+            "LockSerial": "720667",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": null,
+            "ATMAddress": "309, 5303 - 68 Avenue SE",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.221.22.19",
+            "Gateway": null,
+            "Subnet": null,
+            "OriginalInstallDate": "January 9, 2008",
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Foothills",
+            "IsActive": false,
+            "PostalCode": "",
+            "BranchCityId": 10,
+            "BranchAddress": "309, 5303 - 68 Avenue SE",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 189,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 4856,
+                    "ParentId": 288,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4857,
+                    "ParentId": 288,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4858,
+                    "ParentId": 288,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4859,
+                    "ParentId": 288,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4860,
+                    "ParentId": 288,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4861,
+                    "ParentId": 288,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4862,
+                    "ParentId": 288,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 557,
+                    "ParentId": 288,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 558,
+                    "ParentId": 288,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 559,
+                    "ParentId": 288,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 560,
+                    "ParentId": 288,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3291,
+                    "ParentId": 288,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5291,
+                    "ParentId": 288,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 288,
+            "ATMNumber": "A001D992",
+            "ATMName": "Calgary - Inglewood",
+            "ModelNumber": "720",
+            "SerialNumber": "1720-V-33-02641",
+            "LockSerial": "61-47-81",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "1328 9 Avenue Southeast",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.101.9.11",
+            "Gateway": "10.101.9.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "March 08, 2018",
+            "EPPModelNumber": "EPP 7",
+            "EPPCertificateNumber": "PCI 4-20269",
+            "EPPPartNumber": "49249441723B",
+            "EPPVersionNumber": "414-02020 R1X",
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Inglewood",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "1328 9 Avenue Southeast",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 192,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 4821,
+                    "ParentId": 290,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4822,
+                    "ParentId": 290,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4823,
+                    "ParentId": 290,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4824,
+                    "ParentId": 290,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4825,
+                    "ParentId": 290,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4826,
+                    "ParentId": 290,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4827,
+                    "ParentId": 290,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 565,
+                    "ParentId": 290,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 566,
+                    "ParentId": 290,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 567,
+                    "ParentId": 290,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 568,
+                    "ParentId": 290,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3293,
+                    "ParentId": 290,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5293,
+                    "ParentId": 290,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 290,
+            "ATMNumber": "A001D996",
+            "ATMName": "Calgary - Bridlewood",
+            "ModelNumber": "7750",
+            "SerialNumber": "7750WGR02988",
+            "LockSerial": "1428991",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "16919 24 Street Southwest",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.100.169.11",
+            "Gateway": "10.100.169.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "April 08, 2019",
+            "EPPModelNumber": "EPP7",
+            "EPPCertificateNumber": "PCI 4-20269",
+            "EPPPartNumber": "49-249441-723B",
+            "EPPVersionNumber": "414-2020 R1X",
+            "EPPInstallDate": "2019-05-13T00:00:00",
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": "Machine has a true dual custody Mas-Hamilton lock. All staff have their own fob and the lock requires two fobs in order to open the safe.",
+            "BranchName": "Bridlewood",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "16919 24 Street Southwest",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 1,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": 192,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 1,
+                "MakeBrand": "Diebold"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 4828,
+                    "ParentId": 291,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4829,
+                    "ParentId": 291,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4830,
+                    "ParentId": 291,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4831,
+                    "ParentId": 291,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4832,
+                    "ParentId": 291,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4833,
+                    "ParentId": 291,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4834,
+                    "ParentId": 291,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 569,
+                    "ParentId": 291,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 570,
+                    "ParentId": 291,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 571,
+                    "ParentId": 291,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 572,
+                    "ParentId": 291,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": true,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 3294,
+                    "ParentId": 291,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5294,
+                    "ParentId": 291,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 291,
+            "ATMNumber": "A001D998",
+            "ATMName": "Calgary - Bridlewood",
+            "ModelNumber": "7780",
+            "SerialNumber": "7780RGR00874",
+            "LockSerial": "1166293",
+            "MainProvider": "Diebold",
+            "SoftwareVersion": "Vista 5.4.5",
+            "ATMAddress": "16919 24 Street Southwest",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.100.169.12",
+            "Gateway": "10.100.169.1",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "April 08, 2019",
+            "EPPModelNumber": "EPP7",
+            "EPPCertificateNumber": "PCI 4-20269",
+            "EPPPartNumber": "49-249441-723B",
+            "EPPVersionNumber": "414-2020 R1X",
+            "EPPInstallDate": "2019-05-13T00:00:00",
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": "Machine has a true dual custody Mas-Hamilton lock. All staff have their own fob and the lock requires two fobs in order to open the safe.",
+            "BranchName": "Bridlewood",
+            "IsActive": true,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "16919 24 Street Southwest",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 2,
+            "LockMakeId": 1,
+            "AlarmVendorId": 1,
+            "BranchId": null,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 2,
+                "MakeBrand": "NCR"
+            },
+            "LockMake": {
+                "LockMakeId": 1,
+                "LockBrand": "Cencon Mas-Hamilton"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3167,
+                    "ParentId": 163,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5167,
+                    "ParentId": 163,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 163,
+            "ATMNumber": "A001N412",
+            "ATMName": "ATM - Mount Royal University",
+            "ModelNumber": "6622",
+            "SerialNumber": "83-41409666",
+            "LockSerial": "18174170",
+            "MainProvider": "NCR",
+            "SoftwareVersion": null,
+            "ATMAddress": "Mount Royal University, Wyckham House Student Centre, 4825 Mount Royal Gate SW",
+            "Latitude": "51.019625",
+            "Longitude": "-114.119532",
+            "IPAddress": null,
+            "Gateway": null,
+            "Subnet": null,
+            "OriginalInstallDate": "October 30, 2009",
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": false,
+            "ATMImageName": null,
+            "Notes": "Cash only ATM loaded by Brinks. \r\nTrans Canada Branch balances this ATM. \r\nFront Load ATM\r\nNetwork: Everlink VPN",
+            "InternalNotes": null,
+            "BranchName": null,
+            "IsActive": false,
+            "PostalCode": "",
+            "BranchCityId": null,
+            "BranchAddress": "",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 2,
+            "LockMakeId": 2,
+            "AlarmVendorId": 2,
+            "BranchId": 165,
+            "AlarmVendor": {
+                "AlarmVendorId": 2,
+                "VendorName": "Chubb"
+            },
+            "ATMMake": {
+                "ATMMakeId": 2,
+                "MakeBrand": "NCR"
+            },
+            "LockMake": {
+                "LockMakeId": 2,
+                "LockBrand": "S & G"
+            },
+            "Branch": null,
+            "ATMHours": [
+                {
+                    "HourId": 4807,
+                    "ParentId": 180,
+                    "DayOfWeek": "Monday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4808,
+                    "ParentId": 180,
+                    "DayOfWeek": "Tuesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4809,
+                    "ParentId": 180,
+                    "DayOfWeek": "Wednesday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4810,
+                    "ParentId": 180,
+                    "DayOfWeek": "Thursday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4811,
+                    "ParentId": 180,
+                    "DayOfWeek": "Friday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4812,
+                    "ParentId": 180,
+                    "DayOfWeek": "Saturday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                },
+                {
+                    "HourId": 4813,
+                    "ParentId": 180,
+                    "DayOfWeek": "Sunday",
+                    "OpenTime": null,
+                    "CloseTime": null,
+                    "Comments": null,
+                    "IsClosed": true
+                }
+            ],
+            "ATMServices": [
+                {
+                    "ServiceId": 3183,
+                    "ParentId": 180,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 4098,
+                    "ParentId": 180,
+                    "ServiceTypeId": 11,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "24Hours",
+                    "ServiceTypeTitle": "24 Hours",
+                    "ServiceTypeDesc": "Is 24 Hours?"
+                },
+                {
+                    "ServiceId": 4099,
+                    "ParentId": 180,
+                    "ServiceTypeId": 9,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "Camera",
+                    "ServiceTypeTitle": "Camera",
+                    "ServiceTypeDesc": "Has Camera?"
+                },
+                {
+                    "ServiceId": 4100,
+                    "ParentId": 180,
+                    "ServiceTypeId": 8,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DriveThru",
+                    "ServiceTypeTitle": "Drive Thru",
+                    "ServiceTypeDesc": "Has DriveThru?"
+                },
+                {
+                    "ServiceId": 4101,
+                    "ParentId": 180,
+                    "ServiceTypeId": 10,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "FullService",
+                    "ServiceTypeTitle": "Full Service",
+                    "ServiceTypeDesc": "Is Full Service?"
+                },
+                {
+                    "ServiceId": 5183,
+                    "ParentId": 180,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 180,
+            "ATMNumber": "A001N438",
+            "ATMName": "Calgary - Mount Royal ",
+            "ModelNumber": "6634",
+            "SerialNumber": "30-44880979",
+            "LockSerial": "30-44880979",
+            "MainProvider": "NCR FLM",
+            "SoftwareVersion": "Canadian Standard Activate Version 1.2.4",
+            "ATMAddress": "706 17 Avenue Southwest",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.100.2.66",
+            "Gateway": "10.100.10.65",
+            "Subnet": "255.255.255.224",
+            "OriginalInstallDate": "November 02, 2011",
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Mount Royal",
+            "IsActive": false,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "706 17 Avenue Southwest",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 2,
+            "LockMakeId": 2,
+            "AlarmVendorId": 1,
+            "BranchId": 56,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 2,
+                "MakeBrand": "NCR"
+            },
+            "LockMake": {
+                "LockMakeId": 2,
+                "LockBrand": "S & G"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3074,
+                    "ParentId": 62,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5074,
+                    "ParentId": 62,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 62,
+            "ATMNumber": "A001N726",
+            "ATMName": "Calgary - Bowness",
+            "ModelNumber": "5886",
+            "SerialNumber": "90-40383271",
+            "LockSerial": "18214123",
+            "MainProvider": "NCR FLM",
+            "SoftwareVersion": "Canadian Standard Activate Version 1.0",
+            "ATMAddress": "125-6404 Bowness RD NW",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.59.53.11",
+            "Gateway": null,
+            "Subnet": null,
+            "OriginalInstallDate": "June 3, 2008",
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": "ATM removed April 18, 2017",
+            "BranchName": "Bowness",
+            "IsActive": false,
+            "PostalCode": "",
+            "BranchCityId": 10,
+            "BranchAddress": "125-6404 Bowness Road Northwest",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 2,
+            "LockMakeId": 2,
+            "AlarmVendorId": 1,
+            "BranchId": 98,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 2,
+                "MakeBrand": "NCR"
+            },
+            "LockMake": {
+                "LockMakeId": 2,
+                "LockBrand": "S & G"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3116,
+                    "ParentId": 104,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5116,
+                    "ParentId": 104,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 104,
+            "ATMNumber": "A001N748",
+            "ATMName": "Calgary - Trans Canada Centre",
+            "ModelNumber": "5886",
+            "SerialNumber": "90-40377775",
+            "LockSerial": "18174746",
+            "MainProvider": "NCR FLM",
+            "SoftwareVersion": "Canadian Standard Activate Version 1.0",
+            "ATMAddress": "210-1440 52 ST NE",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.58.53.11",
+            "Gateway": null,
+            "Subnet": null,
+            "OriginalInstallDate": "March 19, 2008",
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": "Removed April 19, 2017",
+            "BranchName": "Trans Canada Centre",
+            "IsActive": false,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "210-1440 52 ST NE",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        },
+        {
+            "CityName": "Calgary",
+            "CityId": null,
+            "ATMMakeId": 2,
+            "LockMakeId": 2,
+            "AlarmVendorId": 1,
+            "BranchId": 98,
+            "AlarmVendor": {
+                "AlarmVendorId": 1,
+                "VendorName": "Tyco"
+            },
+            "ATMMake": {
+                "ATMMakeId": 2,
+                "MakeBrand": "NCR"
+            },
+            "LockMake": {
+                "LockMakeId": 2,
+                "LockBrand": "S & G"
+            },
+            "Branch": null,
+            "ATMHours": [],
+            "ATMServices": [
+                {
+                    "ServiceId": 3235,
+                    "ParentId": 232,
+                    "ServiceTypeId": 12,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "USDCurrency",
+                    "ServiceTypeTitle": "USD Currency",
+                    "ServiceTypeDesc": "Offers USD Currency?"
+                },
+                {
+                    "ServiceId": 5235,
+                    "ParentId": 232,
+                    "ServiceTypeId": 1012,
+                    "ServiceValue": false,
+                    "ServiceTypeCode": "DepositAutomation",
+                    "ServiceTypeTitle": "Deposit Automation",
+                    "ServiceTypeDesc": "Offers Deposit Automation?"
+                }
+            ],
+            "ATMId": 232,
+            "ATMNumber": "A001N748",
+            "ATMName": "Calgary - Trans Canada Centre",
+            "ModelNumber": "6634",
+            "SerialNumber": "30-46696694",
+            "LockSerial": "23861965",
+            "MainProvider": "NCR",
+            "SoftwareVersion": "Canadian Standard Activate V 1.2.4",
+            "ATMAddress": "210-1440 52 ST NE",
+            "Latitude": null,
+            "Longitude": null,
+            "IPAddress": "10.58.53.11",
+            "Gateway": "10.58.53.1",
+            "Subnet": "255.255.255.0",
+            "OriginalInstallDate": "April 19, 2017",
+            "EPPModelNumber": null,
+            "EPPCertificateNumber": null,
+            "EPPPartNumber": null,
+            "EPPVersionNumber": null,
+            "EPPInstallDate": null,
+            "ReplacementDate": null,
+            "IsAddressSameAsBranch": true,
+            "ATMImageName": null,
+            "Notes": null,
+            "InternalNotes": null,
+            "BranchName": "Trans Canada Centre",
+            "IsActive": false,
+            "PostalCode": null,
+            "BranchCityId": 10,
+            "BranchAddress": "210-1440 52 ST NE",
+            "Brinks": null,
+            "BalancedBy": null,
+            "Cassette1": null,
+            "Cassette2": null,
+            "Cassette3": null,
+            "Cassette4": null
+        }
+    ]
+},
+"ATM_by_ID": {
+  "Total": "2",
+  "Messages": [
+  ],
+  "ApiVersionNumber": "1.3.0.0",
+  "IsSuccess": true,
+  "Response": [
+    {
+      "Region": "Northeasts",
+      "BranchNumber": 205,
+      "BranchName": "Atrium Centre",
+      "BranchAddress": "5012 49 Street",
+      "City": "Lloydminster",
+      "TransitNumber": "10199-899",
+      "CommunityCityName": "Lloydminster",
+      "LocationType": {
+        "LocationTypeId": 1,
+        "LocationTypeName": "Branch"
+      },
+      "BranchId": 1,
+      "RegionId": 1,
+      "Bin": 603164,
+      "BranchManager": "Tara Ferguson",
+      "MailingAddress": "5012 49 ST",
+      "PostalCode": "T9V 0K2",
+      "Latitude": "53.282527",
+      "Longitude": "-110.0058147",
+      "Notes": null,
+      "IsActive": true,
+      "BranchServices": [
+        {
+          "ServiceId": 214,
+          "ParentId": 1,
+          "ServiceTypeId": 7,
+          "ServiceValue": true,
+          "ServiceTypeCode": "Chequesource",
+          "ServiceTypeTitle": "Cheque Source",
+          "ServiceTypeDesc": "Has Cheque Source?"
+        },
+        {
+          "ServiceId": 733,
+          "ParentId": 1,
+          "ServiceTypeId": 5,
+          "ServiceValue": true,
+          "ServiceTypeCode": "CommercialServices",
+          "ServiceTypeTitle": "Commercial Services",
+          "ServiceTypeDesc": "Has Commercial Service?"
+        },
+        {
+          "ServiceId": 596,
+          "ParentId": 1,
+          "ServiceTypeId": 6,
+          "ServiceValue": true,
+          "ServiceTypeCode": "FinancialPlanning",
+          "ServiceTypeTitle": "Financial Planning",
+          "ServiceTypeDesc": "Has Financial Planning?"
+        },
+        {
+          "ServiceId": 454,
+          "ParentId": 1,
+          "ServiceTypeId": 4,
+          "ServiceValue": true,
+          "ServiceTypeCode": "InsuranceOffice",
+          "ServiceTypeTitle": "Insurance Office",
+          "ServiceTypeDesc": "Has Insurance Office?"
+        },
+        {
+          "ServiceId": 48,
+          "ParentId": 1,
+          "ServiceTypeId": 2,
+          "ServiceValue": true,
+          "ServiceTypeCode": "VideoConference",
+          "ServiceTypeTitle": "Video Conference",
+          "ServiceTypeDesc": "Has Video Conference?"
+        },
+        {
+          "ServiceId": 851,
+          "ParentId": 1,
+          "ServiceTypeId": 3,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WealthManagement",
+          "ServiceTypeTitle": "Wealth Management",
+          "ServiceTypeDesc": "Has Wealth Management?"
+        },
+        {
+          "ServiceId": 649,
+          "ParentId": 1,
+          "ServiceTypeId": 1,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WheelChairAccess",
+          "ServiceTypeTitle": "WheelChair Access",
+          "ServiceTypeDesc": "Has WheelChair Access?"
+        }
+      ],
+      "ATMs": [
+        {
+          "ATMMake": {
+            "ATMMakeId": 2,
+            "MakeBrand": "NCR"
+          },
+          "LockMake": {
+            "LockMakeId": 2,
+            "LockBrand": "S & G"
+          },
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 933,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 934,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 935,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 936,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 937,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "08:00:00",
+              "CloseTime": "20:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 938,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": "10:00:00",
+              "CloseTime": "17:00:00",
+              "Comments": null,
+              "IsClosed": false
+            },
+            {
+              "HourId": 939,
+              "ParentId": 1,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 4,
+              "ParentId": 1,
+              "ServiceTypeId": 11,
+              "ServiceValue": false,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 2,
+              "ParentId": 1,
+              "ServiceTypeId": 9,
+              "ServiceValue": false,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 5022,
+              "ParentId": 1,
+              "ServiceTypeId": 1012,
+              "ServiceValue": true,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            },
+            {
+              "ServiceId": 1,
+              "ParentId": 1,
+              "ServiceTypeId": 8,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 3,
+              "ParentId": 1,
+              "ServiceTypeId": 10,
+              "ServiceValue": true,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 3022,
+              "ParentId": 1,
+              "ServiceTypeId": 12,
+              "ServiceValue": true,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            }
+          ],
+          "ATMId": 1,
+          "ATMNumber": "A001N865",
+          "ATMName": "Lloydminster - Atrium Centre",
+          "ModelNumber": "6634",
+          "Notes": "Branch loads cash and process deposits",
+          "Brinks": "Fort Knox",
+          "BalancedBy": "Adam Lamping",
+          "Cassette1": "10 CAD",
+          "Cassette2": "20 CAD",
+          "Cassette3": "50 CAD",
+          "Cassette4": "100 USD"
+        },
+        {
+          "ATMMake": null,
+          "LockMake": null,
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 3464,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3465,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3466,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3467,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3468,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3469,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3470,
+              "ParentId": 1310,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 3315,
+              "ParentId": 1310,
+              "ServiceTypeId": 11,
+              "ServiceValue": false,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 3316,
+              "ParentId": 1310,
+              "ServiceTypeId": 9,
+              "ServiceValue": false,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 5315,
+              "ParentId": 1310,
+              "ServiceTypeId": 1012,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            },
+            {
+              "ServiceId": 3317,
+              "ParentId": 1310,
+              "ServiceTypeId": 8,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 3318,
+              "ParentId": 1310,
+              "ServiceTypeId": 10,
+              "ServiceValue": false,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 3319,
+              "ParentId": 1310,
+              "ServiceTypeId": 12,
+              "ServiceValue": false,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            }
+          ],
+          "ATMId": 1310,
+          "ATMNumber": "1234",
+          "ATMName": "south",
+          "ModelNumber": null,
+          "Notes": null,
+          "Brinks": "2234 john",
+          "BalancedBy": "john",
+          "Cassette1": null,
+          "Cassette2": null,
+          "Cassette3": null,
+          "Cassette4": null
+        },
+        {
+          "ATMMake": {
+            "ATMMakeId": 1,
+            "MakeBrand": "Diebold"
+          },
+          "LockMake": {
+            "LockMakeId": 2,
+            "LockBrand": "S & G"
+          },
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 3499,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3500,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3501,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3502,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3503,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3504,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 3505,
+              "ParentId": 1311,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 3324,
+              "ParentId": 1311,
+              "ServiceTypeId": 11,
+              "ServiceValue": false,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 3325,
+              "ParentId": 1311,
+              "ServiceTypeId": 9,
+              "ServiceValue": false,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 5316,
+              "ParentId": 1311,
+              "ServiceTypeId": 1012,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            },
+            {
+              "ServiceId": 3326,
+              "ParentId": 1311,
+              "ServiceTypeId": 8,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 3327,
+              "ParentId": 1311,
+              "ServiceTypeId": 10,
+              "ServiceValue": false,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 3328,
+              "ParentId": 1311,
+              "ServiceTypeId": 12,
+              "ServiceValue": false,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            }
+          ],
+          "ATMId": 1311,
+          "ATMNumber": "44556677",
+          "ATMName": "SouthWest",
+          "ModelNumber": null,
+          "Notes": null,
+          "Brinks": "Jar5566",
+          "BalancedBy": "Jamal",
+          "Cassette1": null,
+          "Cassette2": null,
+          "Cassette3": null,
+          "Cassette4": null
+        }
+      ],
+      "BranchHours": [
+        {
+          "HourId": 1,
+          "ParentId": 1,
+          "DayOfWeek": "Monday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 2,
+          "ParentId": 1,
+          "DayOfWeek": "Tuesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 3,
+          "ParentId": 1,
+          "DayOfWeek": "Wednesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 4,
+          "ParentId": 1,
+          "DayOfWeek": "Thursday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 5,
+          "ParentId": 1,
+          "DayOfWeek": "Friday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 6,
+          "ParentId": 1,
+          "DayOfWeek": "Saturday",
+          "OpenTime": null,
+          "CloseTime": null,
+          "Comments": null,
+          "IsClosed": true
+        },
+        {
+          "HourId": 7,
+          "ParentId": 1,
+          "DayOfWeek": "Sunday",
+          "OpenTime": null,
+          "CloseTime": null,
+          "Comments": null,
+          "IsClosed": true
+        }
+      ],
+      "ContactInfo": [
+        {
+          "ContactInfoId": 1,
+          "BranchId": 1,
+          "ContactInfoValue": "780.875.4434",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 1,
+            "ContactInfoTypeDesc": "Main Phone"
+          }
+        },
+        {
+          "ContactInfoId": 104,
+          "BranchId": 1,
+          "ContactInfoValue": "780.808.4777",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 3,
+            "ContactInfoTypeDesc": "Main Fax"
+          }
+        },
+        {
+          "ContactInfoId": 222,
+          "BranchId": 1,
+          "ContactInfoValue": "877.606.6333",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 2,
+            "ContactInfoTypeDesc": "Other Phone"
+          }
+        },
+        {
+          "ContactInfoId": 223,
+          "BranchId": 1,
+          "ContactInfoValue": "4999",
+          "ContactDescription": "Access Code - Legacy CWCU",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 2,
+            "ContactInfoTypeDesc": "Other Phone"
+          }
+        },
+        {
+          "ContactInfoId": 299,
+          "BranchId": 1,
+          "ContactInfoValue": "AtriumCenterBranchManagement@servus.ca",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 5,
+            "ContactInfoTypeDesc": "Main Email"
+          }
+        },
+        {
+          "ContactInfoId": 423,
+          "BranchId": 1,
+          "ContactInfoValue": "780.808.4745",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 7,
+            "ContactInfoTypeDesc": "Direct Line"
+          }
+        },
+        {
+          "ContactInfoId": 2608,
+          "BranchId": 1,
+          "ContactInfoValue": "https://branchdirectory.preprod.prv/Admin/EditBranch/1",
+          "ContactDescription": "Test case ",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 8,
+            "ContactInfoTypeDesc": "Appointment Booking - Retail"
+          }
+        }
+      ]
+    },
+    {
+      "Region": "Northeast",
+      "BranchNumber": 177,
+      "BranchName": "18th Street Crossing",
+      "BranchAddress": "5009 - 18 Street",
+      "City": "Lloydminster",
+      "TransitNumber": "60199-899",
+      "CommunityCityName": "Lloydminster",
+      "LocationType": {
+        "LocationTypeId": 1,
+        "LocationTypeName": "Branch"
+      },
+      "BranchId": 2,
+      "RegionId": 1,
+      "Bin": 603164,
+      "BranchManager": "Allysa Squire",
+      "MailingAddress": "5009 - 18 Street",
+      "PostalCode": "T9V 2G7",
+      "Latitude": "53.2536594",
+      "Longitude": "-110.0057391",
+      "Notes": null,
+      "IsActive": true,
+      "BranchServices": [
+        {
+          "ServiceId": 368,
+          "ParentId": 2,
+          "ServiceTypeId": 5,
+          "ServiceValue": false,
+          "ServiceTypeCode": "CommercialServices",
+          "ServiceTypeTitle": "Commercial Services",
+          "ServiceTypeDesc": "Has Commercial Service?"
+        },
+        {
+          "ServiceId": 455,
+          "ParentId": 2,
+          "ServiceTypeId": 1,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WheelChairAccess",
+          "ServiceTypeTitle": "WheelChair Access",
+          "ServiceTypeDesc": "Has WheelChair Access?"
+        },
+        {
+          "ServiceId": 621,
+          "ParentId": 2,
+          "ServiceTypeId": 3,
+          "ServiceValue": true,
+          "ServiceTypeCode": "WealthManagement",
+          "ServiceTypeTitle": "Wealth Management",
+          "ServiceTypeDesc": "Has Wealth Management?"
+        },
+        {
+          "ServiceId": 635,
+          "ParentId": 2,
+          "ServiceTypeId": 2,
+          "ServiceValue": false,
+          "ServiceTypeCode": "VideoConference",
+          "ServiceTypeTitle": "Video Conference",
+          "ServiceTypeDesc": "Has Video Conference?"
+        },
+        {
+          "ServiceId": 702,
+          "ParentId": 2,
+          "ServiceTypeId": 6,
+          "ServiceValue": false,
+          "ServiceTypeCode": "FinancialPlanning",
+          "ServiceTypeTitle": "Financial Planning",
+          "ServiceTypeDesc": "Has Financial Planning?"
+        },
+        {
+          "ServiceId": 828,
+          "ParentId": 2,
+          "ServiceTypeId": 4,
+          "ServiceValue": false,
+          "ServiceTypeCode": "InsuranceOffice",
+          "ServiceTypeTitle": "Insurance Office",
+          "ServiceTypeDesc": "Has Insurance Office?"
+        },
+        {
+          "ServiceId": 888,
+          "ParentId": 2,
+          "ServiceTypeId": 7,
+          "ServiceValue": true,
+          "ServiceTypeCode": "Chequesource",
+          "ServiceTypeTitle": "Cheque Source",
+          "ServiceTypeDesc": "Has Cheque Source?"
+        }
+      ],
+      "ATMs": [
+        {
+          "ATMMake": {
+            "ATMMakeId": 2,
+            "MakeBrand": "NCR"
+          },
+          "LockMake": {
+            "LockMakeId": 2,
+            "LockBrand": "S & G"
+          },
+          "Branch": null,
+          "ATMHours": [
+            {
+              "HourId": 1471,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1472,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1473,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1474,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1475,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1476,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            },
+            {
+              "HourId": 1477,
+              "ParentId": 2,
+              "DayOfWeek": null,
+              "OpenTime": null,
+              "CloseTime": null,
+              "Comments": null,
+              "IsClosed": true
+            }
+          ],
+          "ATMServices": [
+            {
+              "ServiceId": 5,
+              "ParentId": 2,
+              "ServiceTypeId": 8,
+              "ServiceValue": true,
+              "ServiceTypeCode": "DriveThru",
+              "ServiceTypeTitle": "Drive Thru",
+              "ServiceTypeDesc": "Has DriveThru?"
+            },
+            {
+              "ServiceId": 6,
+              "ParentId": 2,
+              "ServiceTypeId": 9,
+              "ServiceValue": true,
+              "ServiceTypeCode": "Camera",
+              "ServiceTypeTitle": "Camera",
+              "ServiceTypeDesc": "Has Camera?"
+            },
+            {
+              "ServiceId": 7,
+              "ParentId": 2,
+              "ServiceTypeId": 10,
+              "ServiceValue": true,
+              "ServiceTypeCode": "FullService",
+              "ServiceTypeTitle": "Full Service",
+              "ServiceTypeDesc": "Is Full Service?"
+            },
+            {
+              "ServiceId": 8,
+              "ParentId": 2,
+              "ServiceTypeId": 11,
+              "ServiceValue": true,
+              "ServiceTypeCode": "24Hours",
+              "ServiceTypeTitle": "24 Hours",
+              "ServiceTypeDesc": "Is 24 Hours?"
+            },
+            {
+              "ServiceId": 3023,
+              "ParentId": 2,
+              "ServiceTypeId": 12,
+              "ServiceValue": true,
+              "ServiceTypeCode": "USDCurrency",
+              "ServiceTypeTitle": "USD Currency",
+              "ServiceTypeDesc": "Offers USD Currency?"
+            },
+            {
+              "ServiceId": 5023,
+              "ParentId": 2,
+              "ServiceTypeId": 1012,
+              "ServiceValue": false,
+              "ServiceTypeCode": "DepositAutomation",
+              "ServiceTypeTitle": "Deposit Automation",
+              "ServiceTypeDesc": "Offers Deposit Automation?"
+            }
+          ],
+          "ATMId": 2,
+          "ATMNumber": "A001N746",
+          "ATMName": "Lloydminster - 18th Street Crossing",
+          "ModelNumber": "6634",
+          "Notes": "\r\nBranch loads cash and process deposits",
+          "Brinks": "Branch",
+          "BalancedBy": "Rabia Pervaiz 08 Dec 2022",
+          "Cassette1": null,
+          "Cassette2": null,
+          "Cassette3": null,
+          "Cassette4": null
+        }
+      ],
+      "BranchHours": [
+        {
+          "HourId": 8,
+          "ParentId": 2,
+          "DayOfWeek": "Monday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 9,
+          "ParentId": 2,
+          "DayOfWeek": "Tuesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 10,
+          "ParentId": 2,
+          "DayOfWeek": "Wednesday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 11,
+          "ParentId": 2,
+          "DayOfWeek": "Thursday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "17:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 12,
+          "ParentId": 2,
+          "DayOfWeek": "Friday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "18:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 13,
+          "ParentId": 2,
+          "DayOfWeek": "Saturday",
+          "OpenTime": "09:30:00",
+          "CloseTime": "15:00:00",
+          "Comments": null,
+          "IsClosed": false
+        },
+        {
+          "HourId": 14,
+          "ParentId": 2,
+          "DayOfWeek": "Sunday",
+          "OpenTime": null,
+          "CloseTime": null,
+          "Comments": null,
+          "IsClosed": true
+        }
+      ],
+      "ContactInfo": [
+        {
+          "ContactInfoId": 2,
+          "BranchId": 2,
+          "ContactInfoValue": "780-875-4434",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 1,
+            "ContactInfoTypeDesc": "Main Phone"
+          }
+        },
+        {
+          "ContactInfoId": 105,
+          "BranchId": 2,
+          "ContactInfoValue": "780-874-4222",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 3,
+            "ContactInfoTypeDesc": "Main Fax"
+          }
+        },
+        {
+          "ContactInfoId": 296,
+          "BranchId": 2,
+          "ContactInfoValue": "18thStreetCrossingBranch@servus.ca",
+          "ContactDescription": null,
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 5,
+            "ContactInfoTypeDesc": "Main Email"
+          }
+        },
+        {
+          "ContactInfoId": 424,
+          "BranchId": 2,
+          "ContactInfoValue": "780-874-4210",
+          "ContactDescription": "ext 44210",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 7,
+            "ContactInfoTypeDesc": "Direct Line"
+          }
+        },
+        {
+          "ContactInfoId": 2609,
+          "BranchId": 2,
+          "ContactInfoValue": "https://branchdirectory.preprod.prv/Admin/EditBranch/2",
+          "ContactDescription": "Chrome  ",
+          "ContactInfoTypeId": 0,
+          "ContactInfoType": {
+            "ContactInfoTypeId": 8,
+            "ContactInfoTypeDesc": "Appointment Booking - Retail"
+          }
+        }
+      ]
+    }
+  ]
+}
+	
+}	
