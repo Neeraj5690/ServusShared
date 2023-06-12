@@ -1,0 +1,54 @@
+{
+    "Statement": [
+        {
+            "DocumentId": "1234567",
+            "StatementSource": "Doxim",
+            "StatementDate": "2020-12-31"
+        },
+        {
+            "DocumentId": "89101112",
+            "StatementSource": "Doxim",
+            "StatementDate": "2020-11-30"
+        },
+        {
+            "DocumentId": "06/10/2017-00009614.I50_4",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2017-10-06"
+        },
+        {
+            "DocumentId": "03/10/2017-00040247.I49_11",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2017-10-03"
+        },
+        {
+            "DocumentId": "12/10/2016-00002905.I49_2",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2016-10-12"
+        },
+        {
+            "DocumentId": "09/10/2016-00030332.I48_4",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2016-10-09"
+        },
+        {
+            "DocumentId": "06/10/2016-00007295.I41_23",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2016-10-06"
+        },
+        {
+            "DocumentId": "03/10/2016-00122472.H99_10",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2016-10-03"
+        },
+        {
+            "DocumentId": "02/10/2016-00026466.H99_12",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2016-10-02"
+        },
+        {
+            "DocumentId": "01/10/2016-00017012.H99_3",
+            "StatementSource": "ISNetwork",
+            "StatementDate": "2016-10-01"
+        }
+    ]
+}
