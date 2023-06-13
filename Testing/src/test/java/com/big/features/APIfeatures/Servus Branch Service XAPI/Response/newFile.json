@@ -1,0 +1,54 @@
+{
+  "page":'#present',
+  "per_page": '#present',
+  "total": '#present',
+  "total_pages": '#present',
+  "data": [
+    { 
+      "id": #present,
+      "email": #present,
+      "first_name": #present,
+      "last_name": #present,
+      "avatar": #present
+    },
+    {
+      "id": #present,
+      "email": #present,
+      "first_name": #present,
+      "last_name": #present,
+      "avatar": #present
+    },
+    {
+      "id": #present,
+      "email": #present,
+      "first_name": #present,
+      "last_name": #present,
+      "avatar": #present
+    },
+    {
+      "id": #present,
+      "email": #present,
+      "first_name": #present,
+      "last_name": #present,
+      "avatar": #present
+    },
+    {
+      "id": #present,
+      "email": #present,
+      "first_name": #present,
+      "last_name": #present,
+      "avatar": #present
+    },
+    {
+      "id": #present,
+      "email": #present,
+      "first_name": #present,
+      "last_name": #present,
+      "avatar": #present
+    }
+  ],
+  "support": {
+    "url": #present,
+    "text": #present
+  }
+}
